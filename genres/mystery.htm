@@ -1,285 +1,269 @@
 <!DOCTYPE html>
+<!-- EMDb Template "Dark Comfort" by R3gi, Czech Republic, 2016.05.10 -->
 <html>
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-    <title>EMDB - Genres - &#1502;&#1505;&#1514;&#1493;&#1512;&#1497;&#1503;</title>
-    <link href="../emdb.css" rel="stylesheet" type="text/css" />
-</head>
-<body>
-    <div class="container">
-        <div>
-            <a href="../index.htm" class="button button-orange">EMDB &gt;</a>
-            <a href="../index.htm#genres" class="button button-orange">Genres &gt;</a>
-            <a href="mystery.htm" class="button button-orange">&#1502;&#1505;&#1514;&#1493;&#1512;&#1497;&#1503;</a>
-        </div>
-        <img class="bar" src="../gif/bar_orange_black.jpg" alt="bar orange to black" />
-        <div class="header-orange">&#1502;&#1505;&#1514;&#1493;&#1512;&#1497;&#1503;</div>
-        <ul class="link-gray movie-list">
-            
-        <li class="thumbnail">
-            <a href="../movies/188.htm"><img border="0" src="../covers/000608.jpg" alt="poster Blow-Up | &#1497;&#1510;&#1512;&#1497;&#1501;
-        &nbsp;&nbsp;(1966)
-        " height="135" align="middle"></a>
-            <br>
-            <div class="thumbnail-text">
-                <a href="../movies/188.htm">Blow-Up | &#1497;&#1510;&#1512;&#1497;&#1501;
-        &nbsp;&nbsp;(1966)
-        </a>
-            </div>
-        </li>
-        
+	<head>
+		<meta charset="UTF-8">
+		<link href="../style.css" rel="stylesheet" type="text/css" />
+		<title>EMDB - Genres - &#1502;&#1505;&#1514;&#1493;&#1512;&#1497;&#1503;</title>
+		<!-- Sticky menu -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+		<script>
+			var sticky_element = ".menu"; // CSS ID or CLASS name of the element to stick
+			var sticky_element_clean = sticky_element.substring(1, sticky_element.length);
+			$(function() {
+				createSticky($(sticky_element));
+			});
+			function createSticky(sticky) {
+				$('<div id="' + sticky_element_clean + '_phantom"></div>').insertBefore(sticky_element); // Phantom prevents jump
+				if (typeof sticky !== "undefined") {
+					var pos = sticky.offset().top,
+						win = $(window);
 
-        <li class="thumbnail">
-            <a href="../movies/234.htm"><img border="0" src="../covers/000661.jpg" alt="poster Blue Velvet | &#1511;&#1496;&#1497;&#1508;&#1492; &#1499;&#1495;&#1493;&#1500;&#1492;
-        &nbsp;&nbsp;(1986)
-        " height="135" align="middle"></a>
-            <br>
-            <div class="thumbnail-text">
-                <a href="../movies/234.htm">Blue Velvet | &#1511;&#1496;&#1497;&#1508;&#1492; &#1499;&#1495;&#1493;&#1500;&#1492;
-        &nbsp;&nbsp;(1986)
-        </a>
-            </div>
-        </li>
-        
+					win.on("scroll", function() {
+						if (win.scrollTop() >= pos) {
+							var phantomHeight = $(sticky_element).outerHeight();
+							sticky.addClass("fixed");
+							$('#' + sticky_element_clean + '_phantom').height(phantomHeight).show();
 
-        <li class="thumbnail">
-            <a href="../movies/231.htm"><img border="0" src="../covers/000658.jpg" alt="poster Chinatown | &#1510;'&#1497;&#1497;&#1504;&#1492;&#1496;&#1488;&#1493;&#1503;
-        &nbsp;&nbsp;(1974)
-        " height="135" align="middle"></a>
-            <br>
-            <div class="thumbnail-text">
-                <a href="../movies/231.htm">Chinatown | &#1510;'&#1497;&#1497;&#1504;&#1492;&#1496;&#1488;&#1493;&#1503;
-        &nbsp;&nbsp;(1974)
-        </a>
-            </div>
-        </li>
-        
+							// Fix for anchor links position
+							var anchorOffset = '-' + phantomHeight + 'px';
+							$('.anchor').css({'visibility': 'hidden','display': 'block','position': 'relative','top': anchorOffset,});
+						} else {
+							sticky.removeClass("fixed");
+							$('#' + sticky_element_clean + '_phantom').hide();
+						}
+					});
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<div id="header">
+			<div class="inner">
+				<div class="link_db">
+					<a href="http://www.imdb.com" target="_blank" alt="IMDB">IMDB</a>|<a href="http://www.emdb.eu" target="_blank" alt="EMDB">EMDB</a>
+				</div>
+				<div class="title_box"><div class="title">Genres - &#1502;&#1505;&#1514;&#1493;&#1512;&#1497;&#1503;</div></div>
+			</div>
+			<div class="navigation menu">
+				<div class="in">
+					<a href="../index.htm" class="category">EMDB</a>
+					<a href="../index.htm#genres" class="category"> > Genres</a>
+					<a href="mystery.htm" class="category"> > &#1502;&#1505;&#1514;&#1493;&#1512;&#1497;&#1503;</a>
+				</div>
+			</div>
+		</div>
+		<div id="wrap">
+			<div class="category">
+				<div class="category">
+			<li class="thumbnail" href="../movies/188.htm">
+				<a href="../movies/188.htm"><img src="../covers/000608.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/188.htm">Blow-Up | &#1497;&#1510;&#1512;&#1497;&#1501;
+			&nbsp;(1966)
+			</a>
+				</div>
+			</li>
+			
 
-        <li class="thumbnail">
-            <a href="../movies/149.htm"><img border="0" src="../covers/000566.jpg" alt="poster Citizen Kane
-        &nbsp;&nbsp;(1941)
-        " height="135" align="middle"></a>
-            <br>
-            <div class="thumbnail-text">
-                <a href="../movies/149.htm">Citizen Kane
-        &nbsp;&nbsp;(1941)
-        </a>
-            </div>
-        </li>
-        
+			<li class="thumbnail" href="../movies/234.htm">
+				<a href="../movies/234.htm"><img src="../covers/000661.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/234.htm">Blue Velvet | &#1511;&#1496;&#1497;&#1508;&#1492; &#1499;&#1495;&#1493;&#1500;&#1492;
+			&nbsp;(1986)
+			</a>
+				</div>
+			</li>
+			
 
-        <li class="thumbnail">
-            <a href="../movies/193.htm"><img border="0" src="../covers/000614.jpg" alt="poster Finding Vivian Maier | &#1500;&#1490;&#1500;&#1493;&#1514; &#1488;&#1514; &#1493;&#1497;&#1493;&#1497;&#1488;&#1503; &#1502;&#1488;&#1497;&#1497;&#1512;
-        &nbsp;&nbsp;(2013)
-        " height="135" align="middle"></a>
-            <br>
-            <div class="thumbnail-text">
-                <a href="../movies/193.htm">Finding Vivian Maier | &#1500;&#1490;&#1500;&#1493;&#1514; &#1488;&#1514; &#1493;&#1497;&#1493;&#1497;&#1488;&#1503; &#1502;&#1488;&#1497;&#1497;&#1512;
-        &nbsp;&nbsp;(2013)
-        </a>
-            </div>
-        </li>
-        
+			<li class="thumbnail" href="../movies/231.htm">
+				<a href="../movies/231.htm"><img src="../covers/000658.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/231.htm">Chinatown | &#1510;'&#1497;&#1497;&#1504;&#1492;&#1496;&#1488;&#1493;&#1503;
+			&nbsp;(1974)
+			</a>
+				</div>
+			</li>
+			
 
-        <li class="thumbnail">
-            <a href="../movies/286.htm"><img border="0" src="../covers/000721.jpg" alt="poster Hugo | &#1492;&#1493;&#1490;&#1493;
-        &nbsp;&nbsp;(2011)
-        " height="135" align="middle"></a>
-            <br>
-            <div class="thumbnail-text">
-                <a href="../movies/286.htm">Hugo | &#1492;&#1493;&#1490;&#1493;
-        &nbsp;&nbsp;(2011)
-        </a>
-            </div>
-        </li>
-        
+			<li class="thumbnail" href="../movies/149.htm">
+				<a href="../movies/149.htm"><img src="../covers/000566.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/149.htm">Citizen Kane
+			&nbsp;(1941)
+			</a>
+				</div>
+			</li>
+			
 
-        <li class="thumbnail">
-            <a href="../movies/278.htm"><img border="0" src="../covers/000713.jpg" alt="poster Minority Report | &#1491;&#1493;"&#1495; &#1502;&#1497;&#1493;&#1495;&#1491;
-        &nbsp;&nbsp;(2002)
-        " height="135" align="middle"></a>
-            <br>
-            <div class="thumbnail-text">
-                <a href="../movies/278.htm">Minority Report | &#1491;&#1493;"&#1495; &#1502;&#1497;&#1493;&#1495;&#1491;
-        &nbsp;&nbsp;(2002)
-        </a>
-            </div>
-        </li>
-        
+			<li class="thumbnail" href="../movies/193.htm">
+				<a href="../movies/193.htm"><img src="../covers/000614.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/193.htm">Finding Vivian Maier | &#1500;&#1490;&#1500;&#1493;&#1514; &#1488;&#1514; &#1493;&#1497;&#1493;&#1497;&#1488;&#1503; &#1502;&#1488;&#1497;&#1497;&#1512;
+			&nbsp;(2013)
+			</a>
+				</div>
+			</li>
+			
 
-        <li class="thumbnail">
-            <a href="../movies/199.htm"><img border="0" src="../covers/000621.jpg" alt="poster North by Northwest | &#1502;&#1494;&#1497;&#1502;&#1493;&#1514; &#1489;&#1497;&#1504;&#1500;&#1488;&#1493;&#1502;&#1497;&#1493;&#1514;
-        &nbsp;&nbsp;(1959)
-        " height="135" align="middle"></a>
-            <br>
-            <div class="thumbnail-text">
-                <a href="../movies/199.htm">North by Northwest | &#1502;&#1494;&#1497;&#1502;&#1493;&#1514; &#1489;&#1497;&#1504;&#1500;&#1488;&#1493;&#1502;&#1497;&#1493;&#1514;
-        &nbsp;&nbsp;(1959)
-        </a>
-            </div>
-        </li>
-        
+			<li class="thumbnail" href="../movies/286.htm">
+				<a href="../movies/286.htm"><img src="../covers/000721.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/286.htm">Hugo | &#1492;&#1493;&#1490;&#1493;
+			&nbsp;(2011)
+			</a>
+				</div>
+			</li>
+			
 
-        <li class="thumbnail">
-            <a href="../movies/236.htm"><img border="0" src="../covers/000663.jpg" alt="poster Rashomon | &#1512;&#1488;&#1513;&#1493;&#1502;&#1493;&#1503;
-        &nbsp;&nbsp;(1950)
-        " height="135" align="middle"></a>
-            <br>
-            <div class="thumbnail-text">
-                <a href="../movies/236.htm">Rashomon | &#1512;&#1488;&#1513;&#1493;&#1502;&#1493;&#1503;
-        &nbsp;&nbsp;(1950)
-        </a>
-            </div>
-        </li>
-        
+			<li class="thumbnail" href="../movies/278.htm">
+				<a href="../movies/278.htm"><img src="../covers/000713.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/278.htm">Minority Report | &#1491;&#1493;"&#1495; &#1502;&#1497;&#1493;&#1495;&#1491;
+			&nbsp;(2002)
+			</a>
+				</div>
+			</li>
+			
 
-        <li class="thumbnail">
-            <a href="../movies/181.htm"><img border="0" src="../covers/000601.jpg" alt="poster Rear Window | &#1495;&#1500;&#1493;&#1503; &#1488;&#1495;&#1493;&#1512;&#1497;
-        &nbsp;&nbsp;(1954)
-        " height="135" align="middle"></a>
-            <br>
-            <div class="thumbnail-text">
-                <a href="../movies/181.htm">Rear Window | &#1495;&#1500;&#1493;&#1503; &#1488;&#1495;&#1493;&#1512;&#1497;
-        &nbsp;&nbsp;(1954)
-        </a>
-            </div>
-        </li>
-        
+			<li class="thumbnail" href="../movies/199.htm">
+				<a href="../movies/199.htm"><img src="../covers/000621.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/199.htm">North by Northwest | &#1502;&#1494;&#1497;&#1502;&#1493;&#1514; &#1489;&#1497;&#1504;&#1500;&#1488;&#1493;&#1502;&#1497;&#1493;&#1514;
+			&nbsp;(1959)
+			</a>
+				</div>
+			</li>
+			
 
-        <li class="thumbnail">
-            <a href="../movies/226.htm"><img border="0" src="../covers/000652.jpg" alt="poster A Separation | &#1508;&#1512;&#1497;&#1491;&#1492;
-        &nbsp;&nbsp;(2011)
-        " height="135" align="middle"></a>
-            <br>
-            <div class="thumbnail-text">
-                <a href="../movies/226.htm">A Separation | &#1508;&#1512;&#1497;&#1491;&#1492;
-        &nbsp;&nbsp;(2011)
-        </a>
-            </div>
-        </li>
-        
+			<li class="thumbnail" href="../movies/236.htm">
+				<a href="../movies/236.htm"><img src="../covers/000663.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/236.htm">Rashomon | &#1512;&#1488;&#1513;&#1493;&#1502;&#1493;&#1503;
+			&nbsp;(1950)
+			</a>
+				</div>
+			</li>
+			
 
-        <li class="thumbnail">
-            <a href="../movies/293.htm"><img border="0" src="../covers/000730.jpg" alt="poster Spirited Away | &#1492;&#1502;&#1505;&#1506; &#1492;&#1502;&#1493;&#1508;&#1500;&#1488;
-        &nbsp;&nbsp;(2001)
-        " height="135" align="middle"></a>
-            <br>
-            <div class="thumbnail-text">
-                <a href="../movies/293.htm">Spirited Away | &#1492;&#1502;&#1505;&#1506; &#1492;&#1502;&#1493;&#1508;&#1500;&#1488;
-        &nbsp;&nbsp;(2001)
-        </a>
-            </div>
-        </li>
-        
+			<li class="thumbnail" href="../movies/181.htm">
+				<a href="../movies/181.htm"><img src="../covers/000601.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/181.htm">Rear Window | &#1495;&#1500;&#1493;&#1503; &#1488;&#1495;&#1493;&#1512;&#1497;
+			&nbsp;(1954)
+			</a>
+				</div>
+			</li>
+			
 
-        <li class="thumbnail">
-            <a href="../movies/211.htm"><img border="0" src="../covers/000634.jpg" alt="poster Super 8 | &#1505;&#1493;&#1508;&#1512; 8
-        &nbsp;&nbsp;(2011)
-        " height="135" align="middle"></a>
-            <br>
-            <div class="thumbnail-text">
-                <a href="../movies/211.htm">Super 8 | &#1505;&#1493;&#1508;&#1512; 8
-        &nbsp;&nbsp;(2011)
-        </a>
-            </div>
-        </li>
-        
+			<li class="thumbnail" href="../movies/226.htm">
+				<a href="../movies/226.htm"><img src="../covers/000652.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/226.htm">A Separation | &#1508;&#1512;&#1497;&#1491;&#1492;
+			&nbsp;(2011)
+			</a>
+				</div>
+			</li>
+			
 
-        <li class="thumbnail">
-            <a href="../movies/165.htm"><img border="0" src="../covers/000582.jpg" alt="poster The Thin Blue Line
-        &nbsp;&nbsp;(1988)
-        " height="135" align="middle"></a>
-            <br>
-            <div class="thumbnail-text">
-                <a href="../movies/165.htm">The Thin Blue Line
-        &nbsp;&nbsp;(1988)
-        </a>
-            </div>
-        </li>
-        
+			<li class="thumbnail" href="../movies/293.htm">
+				<a href="../movies/293.htm"><img src="../covers/000730.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/293.htm">Spirited Away | &#1492;&#1502;&#1505;&#1506; &#1492;&#1502;&#1493;&#1508;&#1500;&#1488;
+			&nbsp;(2001)
+			</a>
+				</div>
+			</li>
+			
 
-        <li class="thumbnail">
-            <a href="../movies/290.htm"><img border="0" src="../covers/000727.jpg" alt="poster The Village | &#1492;&#1499;&#1508;&#1512;
-        &nbsp;&nbsp;(2004)
-        " height="135" align="middle"></a>
-            <br>
-            <div class="thumbnail-text">
-                <a href="../movies/290.htm">The Village | &#1492;&#1499;&#1508;&#1512;
-        &nbsp;&nbsp;(2004)
-        </a>
-            </div>
-        </li>
-        
+			<li class="thumbnail" href="../movies/211.htm">
+				<a href="../movies/211.htm"><img src="../covers/000634.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/211.htm">Super 8 | &#1505;&#1493;&#1508;&#1512; 8
+			&nbsp;(2011)
+			</a>
+				</div>
+			</li>
+			
 
-        <li class="thumbnail">
-            <a href="../movies/190.htm"><img border="0" src="../covers/000610.jpg" alt="poster While We're Young | &#1499;&#1513;&#1504;&#1492;&#1497;&#1492; &#1510;&#1506;&#1497;&#1512;&#1497;&#1501;
-        &nbsp;&nbsp;(2014)
-        " height="135" align="middle"></a>
-            <br>
-            <div class="thumbnail-text">
-                <a href="../movies/190.htm">While We're Young | &#1499;&#1513;&#1504;&#1492;&#1497;&#1492; &#1510;&#1506;&#1497;&#1512;&#1497;&#1501;
-        &nbsp;&nbsp;(2014)
-        </a>
-            </div>
-        </li>
-        
+			<li class="thumbnail" href="../movies/165.htm">
+				<a href="../movies/165.htm"><img src="../covers/000582.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/165.htm">The Thin Blue Line
+			&nbsp;(1988)
+			</a>
+				</div>
+			</li>
+			
 
-        <li class="thumbnail">
-            <a href="../movies/158.htm"><img border="0" src="../covers/000575.jpg" alt="poster The Words
-        &nbsp;&nbsp;(2012)
-        " height="135" align="middle"></a>
-            <br>
-            <div class="thumbnail-text">
-                <a href="../movies/158.htm">The Words
-        &nbsp;&nbsp;(2012)
-        </a>
-            </div>
-        </li>
-        
+			<li class="thumbnail" href="../movies/290.htm">
+				<a href="../movies/290.htm"><img src="../covers/000727.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/290.htm">The Village | &#1492;&#1499;&#1508;&#1512;
+			&nbsp;(2004)
+			</a>
+				</div>
+			</li>
+			
 
-        <li class="thumbnail">
-            <a href="../movies/307.htm"><img border="0" src="../covers/000744.jpg" alt="poster Zootopia | &#1494;&#1493;&#1496;&#1512;&#1493;&#1508;&#1493;&#1500;&#1497;&#1505; (&#1502;&#1491;&#1493;&#1489;&#1489;)
-        &nbsp;&nbsp;(2016)
-        " height="135" align="middle"></a>
-            <br>
-            <div class="thumbnail-text">
-                <a href="../movies/307.htm">Zootopia | &#1494;&#1493;&#1496;&#1512;&#1493;&#1508;&#1493;&#1500;&#1497;&#1505; (&#1502;&#1491;&#1493;&#1489;&#1489;)
-        &nbsp;&nbsp;(2016)
-        </a>
-            </div>
-        </li>
-        
+			<li class="thumbnail" href="../movies/190.htm">
+				<a href="../movies/190.htm"><img src="../covers/000610.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/190.htm">While We're Young | &#1499;&#1513;&#1504;&#1492;&#1497;&#1492; &#1510;&#1506;&#1497;&#1512;&#1497;&#1501;
+			&nbsp;(2014)
+			</a>
+				</div>
+			</li>
+			
 
-        <li class="thumbnail">
-            <a href="../movies/308.htm"><img border="0" src="../covers/000745.jpg" alt="poster Zootopia | &#1494;&#1493;&#1496;&#1512;&#1493;&#1508;&#1493;&#1500;&#1497;&#1505; (&#1502;&#1514;&#1493;&#1512;&#1490;&#1501;)
-        &nbsp;&nbsp;(2016)
-        " height="135" align="middle"></a>
-            <br>
-            <div class="thumbnail-text">
-                <a href="../movies/308.htm">Zootopia | &#1494;&#1493;&#1496;&#1512;&#1493;&#1508;&#1493;&#1500;&#1497;&#1505; (&#1502;&#1514;&#1493;&#1512;&#1490;&#1501;)
-        &nbsp;&nbsp;(2016)
-        </a>
-            </div>
-        </li>
-        
+			<li class="thumbnail" href="../movies/158.htm">
+				<a href="../movies/158.htm"><img src="../covers/000575.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/158.htm">The Words
+			&nbsp;(2012)
+			</a>
+				</div>
+			</li>
+			
 
-        <li class="thumbnail">
-            <a href="../movies/164.htm"><img border="0" src="../covers/000581.jpg" alt="poster &#1492;&#1510;&#1497;&#1508;&#1493;&#1512;&#1497;&#1501;
-        &nbsp;&nbsp;(1963)
-        " height="135" align="middle"></a>
-            <br>
-            <div class="thumbnail-text">
-                <a href="../movies/164.htm">&#1492;&#1510;&#1497;&#1508;&#1493;&#1512;&#1497;&#1501;
-        &nbsp;&nbsp;(1963)
-        </a>
-            </div>
-        </li>
-        
+			<li class="thumbnail" href="../movies/307.htm">
+				<a href="../movies/307.htm"><img src="../covers/000744.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/307.htm">Zootopia | &#1494;&#1493;&#1496;&#1512;&#1493;&#1508;&#1493;&#1500;&#1497;&#1505; (&#1502;&#1491;&#1493;&#1489;&#1489;)
+			&nbsp;(2016)
+			</a>
+				</div>
+			</li>
+			
 
-        </ul>
-    </div>
-    <div class="footer">
-        <p>Created with EMDB V3.17 (C) 2005-2018 No Rights Reserved ;)</p>
-    </div>
-</body>
+			<li class="thumbnail" href="../movies/308.htm">
+				<a href="../movies/308.htm"><img src="../covers/000745.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/308.htm">Zootopia | &#1494;&#1493;&#1496;&#1512;&#1493;&#1508;&#1493;&#1500;&#1497;&#1505; (&#1502;&#1514;&#1493;&#1512;&#1490;&#1501;)
+			&nbsp;(2016)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/164.htm">
+				<a href="../movies/164.htm"><img src="../covers/000581.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/164.htm">&#1492;&#1510;&#1497;&#1508;&#1493;&#1512;&#1497;&#1501;
+			&nbsp;(1963)
+			</a>
+				</div>
+			</li>
+			
+</div>
+			</div>
+		</div>
+		<footer>
+			<div class="inner">
+				<a class="to_top" href="#header">^</a>
+				<div style="float: left">Dark Comfort by <a href="mailto:regiprogi@gmail.com">R3gi</a></div>
+				<div>Created with EMDB V3.17 (C) 2005-2018 No Rights Reserved ;)</div>
+			</div>
+		</footer>
+	</body>
 </html>

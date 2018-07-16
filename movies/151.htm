@@ -1,31 +1,72 @@
 <!DOCTYPE html>
+<!-- EMDb Template "Dark Comfort" by R3gi, Czech Republic, 2017.12.08 -->
 <html>
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-    <title>151 - The Great Dictator (1940)</title>
-    <link href="../emdb.css" rel="stylesheet" type="text/css" />
-</head>
-<body>
-    <div class="container">
-        <div>
-            <a href="../index.htm" class="button button-orange">EMDB &gt;</a>
-            <a href="../index.htm#all-movies" class="button button-orange">&#1499;&#1500; &#1492;&#1505;&#1512;&#1496;&#1497;&#1501; &gt;</a>
-            <a href="../index.htm#movies-g" class="button button-orange">G &gt;</a>
-            <a href="151.htm" class="button button-orange">The Great Dictator</a>
-            <div class="float-right">
-                <a href="./150.htm" class="button button-gray min-70">&#1492;&#1511;&#1493;&#1491;&#1501;</a>
-                <a href="./152.htm" class="button button-gray min-70">&#1492;&#1489;&#1488;</a>
-            </div>
-        </div>
-        <img class="bar" src="../gif/bar_orange_black.jpg" alt="bar orange to black" />
-        <div class="title">The Great Dictator  (1940)&nbsp;&nbsp;<a href="http://www.imdb.com/title/tt0032553"><img class="imdblink" src="../gif/imdb.gif" alt="link to The Great Dictator on IMDb" align="absbottom" /></a>&nbsp;&nbsp;<a href="http://www.imdb.com/video/imdb/vi3851590681?playlistId=tt0032553&ref_=tt_ov_vi"><img class="imdblink" src="../gif/trailer.gif" alt="link to trailer on IMDb" align="absbottom" /></a></div>
-        <div><p><b>&#1502;&#1505;&#1508;&#1512;</b> 151</p></div>
-        <div class="top-left"><img class="cover" src="../covers/000568.jpg" alt="poster The Great Dictator" /></div>
-        <div class="top-right">
-            
-            <p>
-                <div class="star-text"><b>IMDb &#1491;&#1497;&#1512;&#1493;&#1490; &#1489; &#187;</b></div>
-                <div class="star-stars"><img class="star" src="../gif/goldstar.gif" alt="star" />
+	<head>
+		<meta charset="UTF-8">
+		<link href="../style.css" rel="stylesheet" type="text/css" />
+		<title>151 - The Great Dictator (1940)</title>
+		<!-- Sticky menu -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+		<script>
+			var sticky_element = ".menu"; // CSS ID or CLASS name of the element to stick
+			var sticky_element_clean = sticky_element.substring(1, sticky_element.length);
+			$(function() {
+				createSticky($(sticky_element));
+			});
+			function createSticky(sticky) {
+				$('<div id="' + sticky_element_clean + '_phantom"></div>').insertBefore(sticky_element); // Phantom prevents jump
+				if (typeof sticky !== "undefined") {
+					var pos = sticky.offset().top,
+						win = $(window);
+
+					win.on("scroll", function() {
+						if (win.scrollTop() >= pos) {
+							var phantomHeight = $(sticky_element).outerHeight();
+							sticky.addClass("fixed");
+							$('#' + sticky_element_clean + '_phantom').height(phantomHeight).show();
+
+							// Fix for anchor links position
+							var anchorOffset = '-' + phantomHeight + 'px';
+							$('.anchor').css({'visibility': 'hidden','display': 'block','position': 'relative','top': anchorOffset,});
+						} else {
+							sticky.removeClass("fixed");
+							$('#' + sticky_element_clean + '_phantom').hide();
+						}
+					});
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<div id="header">
+			<div class="inner">
+				<div class="link_db">
+					<a href="http://www.imdb.com" target="_blank" alt="IMDB">IMDB</a>|<a href="http://www.emdb.eu" target="_blank" alt="EMDB">EMDB</a>
+				</div>
+				<div class="quick_nav" style="float:right;"> 
+					<a href="./150.htm" alt="<<">&#1492;&#1511;&#1493;&#1491;&#1501;</a>|<a href="./152.htm" alt=">>">&#1492;&#1489;&#1488;</a>
+				</div>
+				<div class="title_box"><div class="title">The Great Dictator  (1940)</div></div>
+			</div>
+			<div class="navigation menu"> 
+				<div class="in">
+					<a href="../index.htm">EMDB</a>
+					<a href="../index.htm#all_movies"> > &#1499;&#1500; &#1492;&#1505;&#1512;&#1496;&#1497;&#1501;</a>
+					<a href="../index.htm#movies-g"> > G</a>
+					<a href="151.htm"> > The Great Dictator</a>
+				</div>
+			</div>
+		</div>
+		<div id="wrap">
+			<div class="content_box">
+				<div class="content_cover">
+					<img class="cover" src="../covers/000568.jpg" alt="cover The Great Dictator"/></br>
+					<div class="rel_links"><a href="http://www.imdb.com/title/tt0032553"><img class="imdblink" src="../gif/imdb.gif" alt="link to The Great Dictator on IMDb" align="absbottom" /></a>&nbsp;&nbsp;<a href="http://www.imdb.com/video/imdb/vi3851590681?playlistId=tt0032553&ref_=tt_ov_vi"><img class="imdblink" src="../gif/trailer.gif" alt="link to trailer on IMDb" align="absbottom" /></a></div>
+				</div>
+				<div class="content">
+					
+						<p><b>IMDb &#1491;&#1497;&#1512;&#1493;&#1490; &#1489; &#187;</b></br>
+						<img class="star" src="../gif/goldstar.gif" alt="star" />
 <img class="star" src="../gif/goldstar.gif" alt="star" />
 <img class="star" src="../gif/goldstar.gif" alt="star" />
 <img class="star" src="../gif/goldstar.gif" alt="star" />
@@ -35,80 +76,86 @@
 <img class="star" src="../gif/goldstar.gif" alt="star" />
 <img class="star" src="../gif/goldstar.gif" alt="star" />
 <img class="star" src="../gif/graystar.gif" alt="star" />
-</div>
-                <div class="star-text">8.5/10  (167862 &#1492;&#1510;&#1489;&#1506;&#1493;&#1514;)</div>
-            </p>
-            
-            
-            
-            <p><b>&#1502;&#1491;&#1497;&#1504;&#1492; &#187;</b> USA, 125 &#1491;&#1511;&#1493;&#1514;</p>
-            <p><b>&#1513;&#1508;&#1514; &#1491;&#1497;&#1489;&#1493;&#1489; &#187;</b> &#1488;&#1504;&#1490;&#1500;&#1497;&#1514;</p>
-            <p><b>&#1511;&#1496;&#1490;&#1493;&#1512;&#1497;&#1492; &#187;</b> &#1511;&#1493;&#1502;&#1491;&#1497;&#1492;, &#1491;&#1512;&#1502;&#1492;, &#1502;&#1500;&#1495;&#1502;&#1492;</p>
-            <p><b>&#1489;&#1502;&#1488;&#1497; &#187;</b> Rafi Bukai</p>
-        </div>
-        <div>
-            <p>
-                <b>&#1514;&#1511;&#1510;&#1497;&#1512; &#1492;&#1505;&#1512;&#1496; &#187;</b><br>20 years after the end of WWI, in which the nation of Tomainia was on the losing side, Adenoid Hynkel has risen to power as the ruthless dictator of the country. He believes in a pure Aryan state and the decimation of the Jews. This situation is unknown to a simple Jewish Tomainian barber who has been hospitalized since a WWI battle. Upon his release the barber, who had been suffering from memory loss about the war, is shown the new persecuted life of the Jews by many living in the Jewish ghetto, including a washerwoman named Hannah with whom he begins a relationship. The barber is ultimately spared such persecution by Commander Schultz, whom he saved in that WWI battle. The lives of all Jews in Tomainia are eventually spared with a policy shift by Hynkel himself, who is doing so for ulterior motives. But those motives include a desire for world domination, starting with the invasion of neighboring Osterlich, which may be threatened by Benzino Napaloni, the dictator of neighboring ...
-            </p>
-            <p>
-            <b>&#1513;&#1495;&#1511;&#1504;&#1497;&#1501; &#187;</b><br>
-            
-            <section class="actor-paragraph">
-                <span class="actor-image-container">
-                    <a href="http://www.imdb.com/name/nm0000122"><img class="actor-image" src="../gif/no-photo.jpg" alt="photo Charles Chaplin" /></a>
-                </span>
-                <span class="actor-name">Charles Chaplin</span>
-                <span class="character-name">Hynkel - Dictator of Tomania / A Jewish Barber</span>
-            </section>
-            
+
+						8.5/10  (167862 &#1492;&#1510;&#1489;&#1506;&#1493;&#1514;)
+						</p>
+					
+					
+					
+					<p><b>&#1489;&#1502;&#1488;&#1497; &#187;</b> Rafi Bukai</p>
+					<p><b>&#1502;&#1491;&#1497;&#1504;&#1492; &#187;</b> USA &nbsp;&nbsp;<b>Studio:</b> United Artists</p>
+					<p><b>&#1488;&#1493;&#1512;&#1498; &#1492;&#1505;&#1512;&#1496; &#187;:</b> 125 &#1491;&#1511;&#1493;&#1514;</p>
+					<p><b>&#1511;&#1496;&#1490;&#1493;&#1512;&#1497;&#1492; &#187;</b> &#1511;&#1493;&#1502;&#1491;&#1497;&#1492;, &#1491;&#1512;&#1502;&#1492;, &#1502;&#1500;&#1495;&#1502;&#1492;</p>
+					<p><b>&#1502;&#1511;&#1493;&#1491;&#1491;&#1497;&#1501;</b> Unknown &nbsp;&nbsp;<b>&#1497;&#1495;&#1505; &#1492;&#1502;&#1502;&#1491;&#1497;&#1501;</b> Unknown</p>
+					<p><b>&#1513;&#1508;&#1514; &#1491;&#1497;&#1489;&#1493;&#1489; &#187;</b> &#1488;&#1504;&#1490;&#1500;&#1497;&#1514; &nbsp;&nbsp;</p><p><b>&#1494;&#1512;&#1502;&#1497; &#1513;&#1502;&#1506;:</b> </p>
+					
+					<p><b>&#1514;&#1511;&#1510;&#1497;&#1512; &#1492;&#1505;&#1512;&#1496; &#187;</b> 20 years after the end of WWI, in which the nation of Tomainia was on the losing side, Adenoid Hynkel has risen to power as the ruthless dictator of the country. He believes in a pure Aryan state and the decimation of the Jews. This situation is unknown to a simple Jewish Tomainian barber who has been hospitalized since a WWI battle. Upon his release the barber, who had been suffering from memory loss about the war, is shown the new persecuted life of the Jews by many living in the Jewish ghetto, including a washerwoman named Hannah with whom he begins a relationship. The barber is ultimately spared such persecution by Commander Schultz, whom he saved in that WWI battle. The lives of all Jews in Tomainia are eventually spared with a policy shift by Hynkel himself, who is doing so for ulterior motives. But those motives include a desire for world domination, starting with the invasion of neighboring Osterlich, which may be threatened by Benzino Napaloni, the dictator of neighboring ...</p>
+					<div class="actors-container">
+						<p><b>&#1513;&#1495;&#1511;&#1504;&#1497;&#1501; &#187;</b><br>
+						<div class="actors">
+							
+							<a class="actor-container" href="http://www.imdb.com/name/nm0000122">
+								<div class="actor-image-container">
+									<img class="actor-image" src="../gif/no-photo.jpg" />
+								</div>
+								<div class="actor-name">Charles Chaplin</div>
+								<div class="character-name">Hynkel - Dictator of Tomania / A Jewish Barber</div>
+							</a>
+							
 
-            <section class="actor-paragraph">
-                <span class="actor-image-container">
-                    <a href="http://www.imdb.com/name/nm0642988"><img class="actor-image" src="../gif/no-photo.jpg" alt="photo Jack Oakie" /></a>
-                </span>
-                <span class="actor-name">Jack Oakie</span>
-                <span class="character-name">Napaloni - Dictator of Bacteria</span>
-            </section>
-            
+							<a class="actor-container" href="http://www.imdb.com/name/nm0642988">
+								<div class="actor-image-container">
+									<img class="actor-image" src="../gif/no-photo.jpg" />
+								</div>
+								<div class="actor-name">Jack Oakie</div>
+								<div class="character-name">Napaloni - Dictator of Bacteria</div>
+							</a>
+							
 
-            <section class="actor-paragraph">
-                <span class="actor-image-container">
-                    <a href="http://www.imdb.com/name/nm0306786"><img class="actor-image" src="../gif/no-photo.jpg" alt="photo Reginald Gardiner" /></a>
-                </span>
-                <span class="actor-name">Reginald Gardiner</span>
-                <span class="character-name">Schultz</span>
-            </section>
-            
+							<a class="actor-container" href="http://www.imdb.com/name/nm0306786">
+								<div class="actor-image-container">
+									<img class="actor-image" src="../gif/no-photo.jpg" />
+								</div>
+								<div class="actor-name">Reginald Gardiner</div>
+								<div class="character-name">Schultz</div>
+							</a>
+							
 
-            <section class="actor-paragraph">
-                <span class="actor-image-container">
-                    <a href="http://www.imdb.com/name/nm0199787"><img class="actor-image" src="../gif/no-photo.jpg" alt="photo Henry Daniell" /></a>
-                </span>
-                <span class="actor-name">Henry Daniell</span>
-                <span class="character-name">Garbitsch</span>
-            </section>
-            
+							<a class="actor-container" href="http://www.imdb.com/name/nm0199787">
+								<div class="actor-image-container">
+									<img class="actor-image" src="../gif/no-photo.jpg" />
+								</div>
+								<div class="actor-name">Henry Daniell</div>
+								<div class="character-name">Garbitsch</div>
+							</a>
+							
 
-            <section class="actor-paragraph">
-                <span class="actor-image-container">
-                    <a href="http://www.imdb.com/name/nm0317970"><img class="actor-image" src="../gif/no-photo.jpg" alt="photo Billy Gilbert" /></a>
-                </span>
-                <span class="actor-name">Billy Gilbert</span>
-                <span class="character-name">Herring</span>
-            </section>
-            
+							<a class="actor-container" href="http://www.imdb.com/name/nm0317970">
+								<div class="actor-image-container">
+									<img class="actor-image" src="../gif/no-photo.jpg" />
+								</div>
+								<div class="actor-name">Billy Gilbert</div>
+								<div class="character-name">Herring</div>
+							</a>
+							
 
-            </p>
-            <p><b>&#1502;&#1491;&#1497;&#1493;&#1501;</b> Media file, </p>
-            
-            
-            <p><b>&#1502;&#1497;&#1511;&#1493;&#1501; &#1489;&#1502;&#1495;&#1513;&#1489; &#187;</b> \\TICHONETMYCLOUD\Tichonet_movies\&#1505;&#1512;&#1496;&#1497;&#1501; &#1514;&#1497;&#1499;&#1493;&#1504;&#1496;\&#1505;&#1512;&#1496;&#1497;&#1501; &#1502;&#1490;&#1502;&#1514; &#1511;&#1493;&#1500;&#1504;&#1493;&#1506;\&#1492;&#1491;&#1497;&#1511;&#1496;&#1496;&#1493;&#1512; &#1492;&#1490;&#1491;&#1493;&#1500;\The Great Dictator-1.mp4</p>
-            <p><b>&#1502;&#1493;&#1513;&#1488;&#1500;</b> &#1500;&#1488;</p>
-            <p><b>&#1497;&#1495;&#1505; &#1492;&#1502;&#1502;&#1491;&#1497;&#1501;</b> Unknown</p>
-        </div>
-    </div>
-    <div class="footer">
-        <p>Created with EMDB V3.17 (C) 2005-2018 No Rights Reserved ;)</p>
-    </div>
-</body>
+						</div>
+						</p>
+					</div>
+					<p><b>Custom Field 1:</b> </p>
+					<p><b>Custom Field 2:</b> </p>
+					
+					<p><b>&#1502;&#1491;&#1497;&#1493;&#1501;</b> Media file &nbsp;&nbsp;<b>&#1502;&#1511;&#1493;&#1512;:</b> &#1500;&#1488; &#1497;&#1491;&#1493;&#1506; &nbsp;&nbsp;<b>&#1502;&#1493;&#1513;&#1488;&#1500;</b> &#1500;&#1488; &nbsp;&nbsp;<b>File Size:</b> 2.09 GB</p>
+					<p><b>&#1502;&#1505;&#1508;&#1512;</b> 151 &nbsp;&nbsp;<b>Custom Number:</b>  &nbsp;&nbsp;<b>&#1502;&#1497;&#1511;&#1493;&#1501; &#1489;&#1502;&#1495;&#1513;&#1489; &#187;</b> \\TICHONETMYCLOUD\Tichonet_movies\&#1505;&#1512;&#1496;&#1497;&#1501; &#1514;&#1497;&#1499;&#1493;&#1504;&#1496;\&#1505;&#1512;&#1496;&#1497;&#1501; &#1502;&#1490;&#1502;&#1514; &#1511;&#1493;&#1500;&#1504;&#1493;&#1506;\&#1492;&#1491;&#1497;&#1511;&#1496;&#1496;&#1493;&#1512; &#1492;&#1490;&#1491;&#1493;&#1500;\The Great Dictator-1.mp4</p>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div class="inner">
+				<a class="to_top" href="#header">^</a>
+				<div style="float: left">Dark Comfort by <a href="mailto:regiprogi@gmail.com">R3gi</a></div>
+				<div>Created with EMDB V3.17 (C) 2005-2018 No Rights Reserved ;)</div>
+			</div>
+		</footer>
+	</body>
 </html>

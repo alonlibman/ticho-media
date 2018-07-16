@@ -1,31 +1,72 @@
 <!DOCTYPE html>
+<!-- EMDb Template "Dark Comfort" by R3gi, Czech Republic, 2017.12.08 -->
 <html>
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-    <title>126 - Elephant (2003)</title>
-    <link href="../emdb.css" rel="stylesheet" type="text/css" />
-</head>
-<body>
-    <div class="container">
-        <div>
-            <a href="../index.htm" class="button button-orange">EMDB &gt;</a>
-            <a href="../index.htm#all-movies" class="button button-orange">&#1499;&#1500; &#1492;&#1505;&#1512;&#1496;&#1497;&#1501; &gt;</a>
-            <a href="../index.htm#movies-e" class="button button-orange">E &gt;</a>
-            <a href="126.htm" class="button button-orange">Elephant</a>
-            <div class="float-right">
-                <a href="./125.htm" class="button button-gray min-70">&#1492;&#1511;&#1493;&#1491;&#1501;</a>
-                <a href="./127.htm" class="button button-gray min-70">&#1492;&#1489;&#1488;</a>
-            </div>
-        </div>
-        <img class="bar" src="../gif/bar_orange_black.jpg" alt="bar orange to black" />
-        <div class="title">Elephant  (2003)&nbsp;&nbsp;<a href="http://www.imdb.com/title/tt0363589"><img class="imdblink" src="../gif/imdb.gif" alt="link to Elephant on IMDb" align="absbottom" /></a>&nbsp;&nbsp;<a href="http://www.imdb.com/video/imdb/vi1000538393?playlistId=tt0363589&ref_=tt_ov_vi"><img class="imdblink" src="../gif/trailer.gif" alt="link to trailer on IMDb" align="absbottom" /></a></div>
-        <div><p><b>&#1502;&#1505;&#1508;&#1512;</b> 126</p></div>
-        <div class="top-left"><img class="cover" src="../covers/000543.jpg" alt="poster Elephant" /></div>
-        <div class="top-right">
-            
-            <p>
-                <div class="star-text"><b>IMDb &#1491;&#1497;&#1512;&#1493;&#1490; &#1489; &#187;</b></div>
-                <div class="star-stars"><img class="star" src="../gif/goldstar.gif" alt="star" />
+	<head>
+		<meta charset="UTF-8">
+		<link href="../style.css" rel="stylesheet" type="text/css" />
+		<title>126 - Elephant (2003)</title>
+		<!-- Sticky menu -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+		<script>
+			var sticky_element = ".menu"; // CSS ID or CLASS name of the element to stick
+			var sticky_element_clean = sticky_element.substring(1, sticky_element.length);
+			$(function() {
+				createSticky($(sticky_element));
+			});
+			function createSticky(sticky) {
+				$('<div id="' + sticky_element_clean + '_phantom"></div>').insertBefore(sticky_element); // Phantom prevents jump
+				if (typeof sticky !== "undefined") {
+					var pos = sticky.offset().top,
+						win = $(window);
+
+					win.on("scroll", function() {
+						if (win.scrollTop() >= pos) {
+							var phantomHeight = $(sticky_element).outerHeight();
+							sticky.addClass("fixed");
+							$('#' + sticky_element_clean + '_phantom').height(phantomHeight).show();
+
+							// Fix for anchor links position
+							var anchorOffset = '-' + phantomHeight + 'px';
+							$('.anchor').css({'visibility': 'hidden','display': 'block','position': 'relative','top': anchorOffset,});
+						} else {
+							sticky.removeClass("fixed");
+							$('#' + sticky_element_clean + '_phantom').hide();
+						}
+					});
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<div id="header">
+			<div class="inner">
+				<div class="link_db">
+					<a href="http://www.imdb.com" target="_blank" alt="IMDB">IMDB</a>|<a href="http://www.emdb.eu" target="_blank" alt="EMDB">EMDB</a>
+				</div>
+				<div class="quick_nav" style="float:right;"> 
+					<a href="./125.htm" alt="<<">&#1492;&#1511;&#1493;&#1491;&#1501;</a>|<a href="./127.htm" alt=">>">&#1492;&#1489;&#1488;</a>
+				</div>
+				<div class="title_box"><div class="title">Elephant  (2003)</div></div>
+			</div>
+			<div class="navigation menu"> 
+				<div class="in">
+					<a href="../index.htm">EMDB</a>
+					<a href="../index.htm#all_movies"> > &#1499;&#1500; &#1492;&#1505;&#1512;&#1496;&#1497;&#1501;</a>
+					<a href="../index.htm#movies-e"> > E</a>
+					<a href="126.htm"> > Elephant</a>
+				</div>
+			</div>
+		</div>
+		<div id="wrap">
+			<div class="content_box">
+				<div class="content_cover">
+					<img class="cover" src="../covers/000543.jpg" alt="cover Elephant"/></br>
+					<div class="rel_links"><a href="http://www.imdb.com/title/tt0363589"><img class="imdblink" src="../gif/imdb.gif" alt="link to Elephant on IMDb" align="absbottom" /></a>&nbsp;&nbsp;<a href="http://www.imdb.com/video/imdb/vi1000538393?playlistId=tt0363589&ref_=tt_ov_vi"><img class="imdblink" src="../gif/trailer.gif" alt="link to trailer on IMDb" align="absbottom" /></a></div>
+				</div>
+				<div class="content">
+					
+						<p><b>IMDb &#1491;&#1497;&#1512;&#1493;&#1490; &#1489; &#187;</b></br>
+						<img class="star" src="../gif/goldstar.gif" alt="star" />
 <img class="star" src="../gif/goldstar.gif" alt="star" />
 <img class="star" src="../gif/goldstar.gif" alt="star" />
 <img class="star" src="../gif/goldstar.gif" alt="star" />
@@ -35,80 +76,86 @@
 <img class="star" src="../gif/graystar.gif" alt="star" />
 <img class="star" src="../gif/graystar.gif" alt="star" />
 <img class="star" src="../gif/graystar.gif" alt="star" />
-</div>
-                <div class="star-text">7.2/10  (77410 &#1492;&#1510;&#1489;&#1506;&#1493;&#1514;)</div>
-            </p>
-            
-            
-            
-            <p><b>&#1502;&#1491;&#1497;&#1504;&#1492; &#187;</b> USA, 81 &#1491;&#1511;&#1493;&#1514;</p>
-            <p><b>&#1513;&#1508;&#1514; &#1491;&#1497;&#1489;&#1493;&#1489; &#187;</b> &#1488;&#1504;&#1490;&#1500;&#1497;&#1514;, &#1490;&#1512;&#1502;&#1504;&#1497;&#1492;</p>
-            <p><b>&#1511;&#1496;&#1490;&#1493;&#1512;&#1497;&#1492; &#187;</b> &#1508;&#1513;&#1506;, &#1491;&#1512;&#1502;&#1492;, &#1502;&#1514;&#1495;</p>
-            <p><b>&#1489;&#1502;&#1488;&#1497; &#187;</b> Gus Van Sant</p>
-        </div>
-        <div>
-            <p>
-                <b>&#1514;&#1511;&#1510;&#1497;&#1512; &#1492;&#1505;&#1512;&#1496; &#187;</b><br>A day in the lives of a group of average teenage high school students. The film follows every character and shows their daily routines. However two of the students plan to do something that the student body won't forget.
-            </p>
-            <p>
-            <b>&#1513;&#1495;&#1511;&#1504;&#1497;&#1501; &#187;</b><br>
-            
-            <section class="actor-paragraph">
-                <span class="actor-image-container">
-                    <a href="http://www.imdb.com/name/nm1372713"><img class="actor-image" src="../gif/no-photo.jpg" alt="photo Alex Frost" /></a>
-                </span>
-                <span class="actor-name">Alex Frost</span>
-                <span class="character-name">Alex</span>
-            </section>
-            
+
+						7.2/10  (77410 &#1492;&#1510;&#1489;&#1506;&#1493;&#1514;)
+						</p>
+					
+					
+					
+					<p><b>&#1489;&#1502;&#1488;&#1497; &#187;</b> Gus Van Sant</p>
+					<p><b>&#1502;&#1491;&#1497;&#1504;&#1492; &#187;</b> USA &nbsp;&nbsp;<b>Studio:</b> HBO Films</p>
+					<p><b>&#1488;&#1493;&#1512;&#1498; &#1492;&#1505;&#1512;&#1496; &#187;:</b> 81 &#1491;&#1511;&#1493;&#1514;</p>
+					<p><b>&#1511;&#1496;&#1490;&#1493;&#1512;&#1497;&#1492; &#187;</b> &#1508;&#1513;&#1506;, &#1491;&#1512;&#1502;&#1492;, &#1502;&#1514;&#1495;</p>
+					<p><b>&#1502;&#1511;&#1493;&#1491;&#1491;&#1497;&#1501;</b> Unknown &nbsp;&nbsp;<b>&#1497;&#1495;&#1505; &#1492;&#1502;&#1502;&#1491;&#1497;&#1501;</b> Unknown</p>
+					<p><b>&#1513;&#1508;&#1514; &#1491;&#1497;&#1489;&#1493;&#1489; &#187;</b> &#1488;&#1504;&#1490;&#1500;&#1497;&#1514;, &#1490;&#1512;&#1502;&#1504;&#1497;&#1492; &nbsp;&nbsp;</p><p><b>&#1494;&#1512;&#1502;&#1497; &#1513;&#1502;&#1506;:</b> </p>
+					
+					<p><b>&#1514;&#1511;&#1510;&#1497;&#1512; &#1492;&#1505;&#1512;&#1496; &#187;</b> A day in the lives of a group of average teenage high school students. The film follows every character and shows their daily routines. However two of the students plan to do something that the student body won't forget.</p>
+					<div class="actors-container">
+						<p><b>&#1513;&#1495;&#1511;&#1504;&#1497;&#1501; &#187;</b><br>
+						<div class="actors">
+							
+							<a class="actor-container" href="http://www.imdb.com/name/nm1372713">
+								<div class="actor-image-container">
+									<img class="actor-image" src="../gif/no-photo.jpg" />
+								</div>
+								<div class="actor-name">Alex Frost</div>
+								<div class="character-name">Alex</div>
+							</a>
+							
 
-            <section class="actor-paragraph">
-                <span class="actor-image-container">
-                    <a href="http://www.imdb.com/name/nm1370494"><img class="actor-image" src="../gif/no-photo.jpg" alt="photo Eric Deulen" /></a>
-                </span>
-                <span class="actor-name">Eric Deulen</span>
-                <span class="character-name">Eric</span>
-            </section>
-            
+							<a class="actor-container" href="http://www.imdb.com/name/nm1370494">
+								<div class="actor-image-container">
+									<img class="actor-image" src="../gif/no-photo.jpg" />
+								</div>
+								<div class="actor-name">Eric Deulen</div>
+								<div class="character-name">Eric</div>
+							</a>
+							
 
-            <section class="actor-paragraph">
-                <span class="actor-image-container">
-                    <a href="http://www.imdb.com/name/nm1440281"><img class="actor-image" src="../gif/no-photo.jpg" alt="photo John Robinson" /></a>
-                </span>
-                <span class="actor-name">John Robinson</span>
-                <span class="character-name">John McFarland</span>
-            </section>
-            
+							<a class="actor-container" href="http://www.imdb.com/name/nm1440281">
+								<div class="actor-image-container">
+									<img class="actor-image" src="../gif/no-photo.jpg" />
+								</div>
+								<div class="actor-name">John Robinson</div>
+								<div class="character-name">John McFarland</div>
+							</a>
+							
 
-            <section class="actor-paragraph">
-                <span class="actor-image-container">
-                    <a href="http://www.imdb.com/name/nm1371432"><img class="actor-image" src="../gif/no-photo.jpg" alt="photo Elias McConnell" /></a>
-                </span>
-                <span class="actor-name">Elias McConnell</span>
-                <span class="character-name">Elias</span>
-            </section>
-            
+							<a class="actor-container" href="http://www.imdb.com/name/nm1371432">
+								<div class="actor-image-container">
+									<img class="actor-image" src="../gif/no-photo.jpg" />
+								</div>
+								<div class="actor-name">Elias McConnell</div>
+								<div class="character-name">Elias</div>
+							</a>
+							
 
-            <section class="actor-paragraph">
-                <span class="actor-image-container">
-                    <a href="http://www.imdb.com/name/nm1377431"><img class="actor-image" src="../gif/no-photo.jpg" alt="photo Carrie Finklea" /></a>
-                </span>
-                <span class="actor-name">Carrie Finklea</span>
-                <span class="character-name">Carrie</span>
-            </section>
-            
+							<a class="actor-container" href="http://www.imdb.com/name/nm1377431">
+								<div class="actor-image-container">
+									<img class="actor-image" src="../gif/no-photo.jpg" />
+								</div>
+								<div class="actor-name">Carrie Finklea</div>
+								<div class="character-name">Carrie</div>
+							</a>
+							
 
-            </p>
-            <p><b>&#1502;&#1491;&#1497;&#1493;&#1501;</b> Media file, </p>
-            
-            
-            <p><b>&#1502;&#1497;&#1511;&#1493;&#1501; &#1489;&#1502;&#1495;&#1513;&#1489; &#187;</b> \\TICHONETMYCLOUD\Tichonet_movies\&#1505;&#1512;&#1496;&#1497;&#1501; &#1514;&#1497;&#1499;&#1493;&#1504;&#1496;\&#1505;&#1512;&#1496;&#1497;&#1501; &#1502;&#1490;&#1502;&#1514; &#1511;&#1493;&#1500;&#1504;&#1493;&#1506;\&#1488;&#1500;&#1508;&#1504;&#1496; (1)\Elephant.2003.mkv</p>
-            <p><b>&#1502;&#1493;&#1513;&#1488;&#1500;</b> &#1500;&#1488;</p>
-            <p><b>&#1497;&#1495;&#1505; &#1492;&#1502;&#1502;&#1491;&#1497;&#1501;</b> Unknown</p>
-        </div>
-    </div>
-    <div class="footer">
-        <p>Created with EMDB V3.17 (C) 2005-2018 No Rights Reserved ;)</p>
-    </div>
-</body>
+						</div>
+						</p>
+					</div>
+					<p><b>Custom Field 1:</b> </p>
+					<p><b>Custom Field 2:</b> </p>
+					
+					<p><b>&#1502;&#1491;&#1497;&#1493;&#1501;</b> Media file &nbsp;&nbsp;<b>&#1502;&#1511;&#1493;&#1512;:</b> &#1500;&#1488; &#1497;&#1491;&#1493;&#1506; &nbsp;&nbsp;<b>&#1502;&#1493;&#1513;&#1488;&#1500;</b> &#1500;&#1488; &nbsp;&nbsp;<b>File Size:</b> 4.38 GB</p>
+					<p><b>&#1502;&#1505;&#1508;&#1512;</b> 126 &nbsp;&nbsp;<b>Custom Number:</b>  &nbsp;&nbsp;<b>&#1502;&#1497;&#1511;&#1493;&#1501; &#1489;&#1502;&#1495;&#1513;&#1489; &#187;</b> \\TICHONETMYCLOUD\Tichonet_movies\&#1505;&#1512;&#1496;&#1497;&#1501; &#1514;&#1497;&#1499;&#1493;&#1504;&#1496;\&#1505;&#1512;&#1496;&#1497;&#1501; &#1502;&#1490;&#1502;&#1514; &#1511;&#1493;&#1500;&#1504;&#1493;&#1506;\&#1488;&#1500;&#1508;&#1504;&#1496; (1)\Elephant.2003.mkv</p>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div class="inner">
+				<a class="to_top" href="#header">^</a>
+				<div style="float: left">Dark Comfort by <a href="mailto:regiprogi@gmail.com">R3gi</a></div>
+				<div>Created with EMDB V3.17 (C) 2005-2018 No Rights Reserved ;)</div>
+			</div>
+		</footer>
+	</body>
 </html>

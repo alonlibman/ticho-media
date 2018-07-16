@@ -1,31 +1,72 @@
 <!DOCTYPE html>
+<!-- EMDb Template "Dark Comfort" by R3gi, Czech Republic, 2017.12.08 -->
 <html>
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-    <title>248 - &#1502;&#1510;&#1497;&#1510;&#1497;&#1501; (1972)</title>
-    <link href="../emdb.css" rel="stylesheet" type="text/css" />
-</head>
-<body>
-    <div class="container">
-        <div>
-            <a href="../index.htm" class="button button-orange">EMDB &gt;</a>
-            <a href="../index.htm#all-movies" class="button button-orange">&#1499;&#1500; &#1492;&#1505;&#1512;&#1496;&#1497;&#1501; &gt;</a>
-            <a href="../index.htm#movies-z" class="button button-orange">Z &gt;</a>
-            <a href="248.htm" class="button button-orange">&#1502;&#1510;&#1497;&#1510;&#1497;&#1501;</a>
-            <div class="float-right">
-                <a href="./247.htm" class="button button-gray min-70">&#1492;&#1511;&#1493;&#1491;&#1501;</a>
-                <a href="./249.htm" class="button button-gray min-70">&#1492;&#1489;&#1488;</a>
-            </div>
-        </div>
-        <img class="bar" src="../gif/bar_orange_black.jpg" alt="bar orange to black" />
-        <div class="title">&#1502;&#1510;&#1497;&#1510;&#1497;&#1501;  (1972)&nbsp;&nbsp;<a href="http://www.imdb.com/title/tt0068941"><img class="imdblink" src="../gif/imdb.gif" alt="link to &#1502;&#1510;&#1497;&#1510;&#1497;&#1501; on IMDb" align="absbottom" /></a>&nbsp;&nbsp;<a href="http://drive.google.com/open?id=10CApAGv_0zhnMZZHVnAtDiLpc7DLmI_w"><img class="imdblink" src="../gif/trailer.gif" alt="link to trailer on IMDb" align="absbottom" /></a></div>
-        <div><p><b>&#1502;&#1505;&#1508;&#1512;</b> 248</p></div>
-        <div class="top-left"><img class="cover" src="../covers/000678.jpg" alt="poster &#1502;&#1510;&#1497;&#1510;&#1497;&#1501;" /></div>
-        <div class="top-right">
-            
-            <p>
-                <div class="star-text"><b>IMDb &#1491;&#1497;&#1512;&#1493;&#1490; &#1489; &#187;</b></div>
-                <div class="star-stars"><img class="star" src="../gif/goldstar.gif" alt="star" />
+	<head>
+		<meta charset="UTF-8">
+		<link href="../style.css" rel="stylesheet" type="text/css" />
+		<title>248 - &#1502;&#1510;&#1497;&#1510;&#1497;&#1501; (1972)</title>
+		<!-- Sticky menu -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+		<script>
+			var sticky_element = ".menu"; // CSS ID or CLASS name of the element to stick
+			var sticky_element_clean = sticky_element.substring(1, sticky_element.length);
+			$(function() {
+				createSticky($(sticky_element));
+			});
+			function createSticky(sticky) {
+				$('<div id="' + sticky_element_clean + '_phantom"></div>').insertBefore(sticky_element); // Phantom prevents jump
+				if (typeof sticky !== "undefined") {
+					var pos = sticky.offset().top,
+						win = $(window);
+
+					win.on("scroll", function() {
+						if (win.scrollTop() >= pos) {
+							var phantomHeight = $(sticky_element).outerHeight();
+							sticky.addClass("fixed");
+							$('#' + sticky_element_clean + '_phantom').height(phantomHeight).show();
+
+							// Fix for anchor links position
+							var anchorOffset = '-' + phantomHeight + 'px';
+							$('.anchor').css({'visibility': 'hidden','display': 'block','position': 'relative','top': anchorOffset,});
+						} else {
+							sticky.removeClass("fixed");
+							$('#' + sticky_element_clean + '_phantom').hide();
+						}
+					});
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<div id="header">
+			<div class="inner">
+				<div class="link_db">
+					<a href="http://www.imdb.com" target="_blank" alt="IMDB">IMDB</a>|<a href="http://www.emdb.eu" target="_blank" alt="EMDB">EMDB</a>
+				</div>
+				<div class="quick_nav" style="float:right;"> 
+					<a href="./247.htm" alt="<<">&#1492;&#1511;&#1493;&#1491;&#1501;</a>|<a href="./249.htm" alt=">>">&#1492;&#1489;&#1488;</a>
+				</div>
+				<div class="title_box"><div class="title">&#1502;&#1510;&#1497;&#1510;&#1497;&#1501;  (1972)</div></div>
+			</div>
+			<div class="navigation menu"> 
+				<div class="in">
+					<a href="../index.htm">EMDB</a>
+					<a href="../index.htm#all_movies"> > &#1499;&#1500; &#1492;&#1505;&#1512;&#1496;&#1497;&#1501;</a>
+					<a href="../index.htm#movies-z"> > Z</a>
+					<a href="248.htm"> > &#1502;&#1510;&#1497;&#1510;&#1497;&#1501;</a>
+				</div>
+			</div>
+		</div>
+		<div id="wrap">
+			<div class="content_box">
+				<div class="content_cover">
+					<img class="cover" src="../covers/000678.jpg" alt="cover &#1502;&#1510;&#1497;&#1510;&#1497;&#1501;"/></br>
+					<div class="rel_links"><a href="http://www.imdb.com/title/tt0068941"><img class="imdblink" src="../gif/imdb.gif" alt="link to &#1502;&#1510;&#1497;&#1510;&#1497;&#1501; on IMDb" align="absbottom" /></a>&nbsp;&nbsp;<a href="http://drive.google.com/open?id=10CApAGv_0zhnMZZHVnAtDiLpc7DLmI_w"><img class="imdblink" src="../gif/trailer.gif" alt="link to trailer on IMDb" align="absbottom" /></a></div>
+				</div>
+				<div class="content">
+					
+						<p><b>IMDb &#1491;&#1497;&#1512;&#1493;&#1490; &#1489; &#187;</b></br>
+						<img class="star" src="../gif/goldstar.gif" alt="star" />
 <img class="star" src="../gif/goldstar.gif" alt="star" />
 <img class="star" src="../gif/goldstar.gif" alt="star" />
 <img class="star" src="../gif/goldstar.gif" alt="star" />
@@ -35,80 +76,86 @@
 <img class="star" src="../gif/graystar.gif" alt="star" />
 <img class="star" src="../gif/graystar.gif" alt="star" />
 <img class="star" src="../gif/graystar.gif" alt="star" />
-</div>
-                <div class="star-text">7.3/10  (363 &#1492;&#1510;&#1489;&#1506;&#1493;&#1514;)</div>
-            </p>
-            
-            
-            
-            <p><b>&#1502;&#1491;&#1497;&#1504;&#1492; &#187;</b> Israel, 90 &#1491;&#1511;&#1493;&#1514;</p>
-            <p><b>&#1513;&#1508;&#1514; &#1491;&#1497;&#1489;&#1493;&#1489; &#187;</b> &#1506;&#1489;&#1512;&#1497;&#1514;</p>
-            <p><b>&#1511;&#1496;&#1490;&#1493;&#1512;&#1497;&#1492; &#187;</b> &#1511;&#1493;&#1502;&#1491;&#1497;&#1492;, &#1502;&#1490;&#1502;&#1514; &#1511;&#1493;&#1500;&#1504;&#1493;&#1506;, &#1497;&#1513;&#1512;&#1488;&#1500;&#1497;</p>
-            <p><b>&#1489;&#1502;&#1488;&#1497; &#187;</b> Uri Zohar</p>
-        </div>
-        <div>
-            <p>
-                <b>&#1514;&#1511;&#1510;&#1497;&#1512; &#1492;&#1505;&#1512;&#1496; &#187;</b><br>&#1505;&#1512;&#1496;&#1493; &#1513;&#1500; &#1488;&#1493;&#1512;&#1497; &#1494;&#1493;&#1492;&#1512;, &#1492;&#1502;&#1505;&#1508;&#1512; &#1513;&#1500; &#1492;&#1493;&#1493;&#1497; &#1513;&#1499;&#1493;&#1504;&#1514; &#1492;&#1504;&#1502;&#1500; &#1489;&#1514;"&#1488;, &#1514;&#1493;&#1498; &#1499;&#1491;&#1497; &#1514;&#1497;&#1488;&#1493;&#1512; &#1497;&#1491;&#1497;&#1491;&#1493;&#1514;&#1501; &#1513;&#1500; &#1513;&#1504;&#1497;&#1497;&#1501; &#1502;&#1514;&#1493;&#1513;&#1489;&#1497; &#1492;&#1488;&#1494;&#1493;&#1512;, &#1513;&#1496;&#1512;&#1501; &#1492;&#1514;&#1489;&#1490;&#1512;&#1493;. &#1488;&#1493;&#1512;&#1497; &#1494;&#1493;&#1492;&#1512; &#1489;&#1514;&#1508;&#1511;&#1497;&#1491; &#1492;&#1512;&#1493;&#1493;&#1511; &#1493;&#1488;&#1512;&#1497;&#1511; &#1488;&#1497;&#1497;&#1504;&#1513;&#1496;&#1497;&#1497;&#1503;, &#1489;&#1514;&#1508;&#1511;&#1497;&#1491; &#1494;&#1502;&#1512; &#1492;&#1508;&#1493;&#1508; &#1492;&#1504;&#1513;&#1493;&#1497; &#1493;&#1492;&#1502;&#1514;&#1493;&#1505;&#1499;&#1500;. &#1505;&#1490;&#1504;&#1493;&#1504;&#1493; &#1492;&#1495;&#1493;&#1508;&#1513;&#1497; &#1513;&#1500; &#1488;&#1493;&#1512;&#1497; &#1494;&#1493;&#1492;&#1512;, &#1489;&#1505;&#1512;&#1496; &#1513;&#1488;&#1493;&#1500;&#1497; &#1502;&#1497;&#1497;&#1510;&#1490; &#1488;&#1493;&#1514;&#1493; &#1489;&#1488;&#1493;&#1508;&#1503; &#1492;&#1502;&#1493;&#1510;&#1500;&#1495; &#1489;&#1497;&#1493;&#1514;&#1512;. &#1492;&#1495;&#1493;&#1507; &#1513;&#1500; &#1514;&#1500; &#1488;&#1489;&#1497;&#1489;, &#1488;&#1493;&#1493;&#1497;&#1512;&#1514; &#1492;&#1511;&#1497;&#1509; &#1513;&#1496;&#1493;&#1507; &#1492;&#1513;&#1502;&#1513;, &#1492;&#1491;&#1497;&#1488;&#1500;&#1493;&#1490; &#1495;&#1505;&#1512; &#1492;&#1514;&#1497;&#1495;&#1499;&#1493;&#1501; &#1493;&#1492;&#1502;&#1513;&#1506;&#1513;&#1506;, &#1493;&#1514;&#1495;&#1493;&#1513;&#1514; &#1492;&#1495;&#1493;&#1508;&#1513; &#1492;&#1497;&#1500;&#1491;&#1493;&#1514;&#1497; &#1492;&#1502;&#1493;&#1495;&#1500;&#1496;, &#1513;&#1492;&#1508;&#1499;&#1493; &#1488;&#1514; &#1492;&#1505;&#1512;&#1496; &#1492;&#1494;&#1492; &#1500;&#1488;&#1495;&#1491; &#1502;&#1505;&#1512;&#1496;&#1497; &#1492;&#1508;&#1493;&#1500;&#1495;&#1503; &#1492;&#1497;&#1513;&#1512;&#1488;&#1500;&#1497;&#1497;&#1501; &#1492;&#1502;&#1493;&#1489;&#1492;&#1511;&#1497;&#1501; &#1489;&#1497;&#1493;&#1514;&#1512;.
-            </p>
-            <p>
-            <b>&#1513;&#1495;&#1511;&#1504;&#1497;&#1501; &#187;</b><br>
-            
-            <section class="actor-paragraph">
-                <span class="actor-image-container">
-                    <a href="http://www.imdb.com/name/nm0251870"><img class="actor-image" src="../gif/no-photo.jpg" alt="photo Arik Einstein" /></a>
-                </span>
-                <span class="actor-name">Arik Einstein</span>
-                <span class="character-name">Eli</span>
-            </section>
-            
+
+						7.3/10  (363 &#1492;&#1510;&#1489;&#1506;&#1493;&#1514;)
+						</p>
+					
+					
+					
+					<p><b>&#1489;&#1502;&#1488;&#1497; &#187;</b> Uri Zohar</p>
+					<p><b>&#1502;&#1491;&#1497;&#1504;&#1492; &#187;</b> Israel &nbsp;&nbsp;<b>Studio:</b> Malavida</p>
+					<p><b>&#1488;&#1493;&#1512;&#1498; &#1492;&#1505;&#1512;&#1496; &#187;:</b> 90 &#1491;&#1511;&#1493;&#1514;</p>
+					<p><b>&#1511;&#1496;&#1490;&#1493;&#1512;&#1497;&#1492; &#187;</b> &#1511;&#1493;&#1502;&#1491;&#1497;&#1492;, &#1502;&#1490;&#1502;&#1514; &#1511;&#1493;&#1500;&#1504;&#1493;&#1506;, &#1497;&#1513;&#1512;&#1488;&#1500;&#1497;</p>
+					<p><b>&#1502;&#1511;&#1493;&#1491;&#1491;&#1497;&#1501;</b> MPEG-2 (DVD) &nbsp;&nbsp;<b>&#1497;&#1495;&#1505; &#1492;&#1502;&#1502;&#1491;&#1497;&#1501;</b> 2.35:1</p>
+					<p><b>&#1513;&#1508;&#1514; &#1491;&#1497;&#1489;&#1493;&#1489; &#187;</b> &#1506;&#1489;&#1512;&#1497;&#1514; &nbsp;&nbsp;</p><p><b>&#1494;&#1512;&#1502;&#1497; &#1513;&#1502;&#1506;:</b> </p>
+					
+					<p><b>&#1514;&#1511;&#1510;&#1497;&#1512; &#1492;&#1505;&#1512;&#1496; &#187;</b> &#1505;&#1512;&#1496;&#1493; &#1513;&#1500; &#1488;&#1493;&#1512;&#1497; &#1494;&#1493;&#1492;&#1512;, &#1492;&#1502;&#1505;&#1508;&#1512; &#1513;&#1500; &#1492;&#1493;&#1493;&#1497; &#1513;&#1499;&#1493;&#1504;&#1514; &#1492;&#1504;&#1502;&#1500; &#1489;&#1514;"&#1488;, &#1514;&#1493;&#1498; &#1499;&#1491;&#1497; &#1514;&#1497;&#1488;&#1493;&#1512; &#1497;&#1491;&#1497;&#1491;&#1493;&#1514;&#1501; &#1513;&#1500; &#1513;&#1504;&#1497;&#1497;&#1501; &#1502;&#1514;&#1493;&#1513;&#1489;&#1497; &#1492;&#1488;&#1494;&#1493;&#1512;, &#1513;&#1496;&#1512;&#1501; &#1492;&#1514;&#1489;&#1490;&#1512;&#1493;. &#1488;&#1493;&#1512;&#1497; &#1494;&#1493;&#1492;&#1512; &#1489;&#1514;&#1508;&#1511;&#1497;&#1491; &#1492;&#1512;&#1493;&#1493;&#1511; &#1493;&#1488;&#1512;&#1497;&#1511; &#1488;&#1497;&#1497;&#1504;&#1513;&#1496;&#1497;&#1497;&#1503;, &#1489;&#1514;&#1508;&#1511;&#1497;&#1491; &#1494;&#1502;&#1512; &#1492;&#1508;&#1493;&#1508; &#1492;&#1504;&#1513;&#1493;&#1497; &#1493;&#1492;&#1502;&#1514;&#1493;&#1505;&#1499;&#1500;. &#1505;&#1490;&#1504;&#1493;&#1504;&#1493; &#1492;&#1495;&#1493;&#1508;&#1513;&#1497; &#1513;&#1500; &#1488;&#1493;&#1512;&#1497; &#1494;&#1493;&#1492;&#1512;, &#1489;&#1505;&#1512;&#1496; &#1513;&#1488;&#1493;&#1500;&#1497; &#1502;&#1497;&#1497;&#1510;&#1490; &#1488;&#1493;&#1514;&#1493; &#1489;&#1488;&#1493;&#1508;&#1503; &#1492;&#1502;&#1493;&#1510;&#1500;&#1495; &#1489;&#1497;&#1493;&#1514;&#1512;. &#1492;&#1495;&#1493;&#1507; &#1513;&#1500; &#1514;&#1500; &#1488;&#1489;&#1497;&#1489;, &#1488;&#1493;&#1493;&#1497;&#1512;&#1514; &#1492;&#1511;&#1497;&#1509; &#1513;&#1496;&#1493;&#1507; &#1492;&#1513;&#1502;&#1513;, &#1492;&#1491;&#1497;&#1488;&#1500;&#1493;&#1490; &#1495;&#1505;&#1512; &#1492;&#1514;&#1497;&#1495;&#1499;&#1493;&#1501; &#1493;&#1492;&#1502;&#1513;&#1506;&#1513;&#1506;, &#1493;&#1514;&#1495;&#1493;&#1513;&#1514; &#1492;&#1495;&#1493;&#1508;&#1513; &#1492;&#1497;&#1500;&#1491;&#1493;&#1514;&#1497; &#1492;&#1502;&#1493;&#1495;&#1500;&#1496;, &#1513;&#1492;&#1508;&#1499;&#1493; &#1488;&#1514; &#1492;&#1505;&#1512;&#1496; &#1492;&#1494;&#1492; &#1500;&#1488;&#1495;&#1491; &#1502;&#1505;&#1512;&#1496;&#1497; &#1492;&#1508;&#1493;&#1500;&#1495;&#1503; &#1492;&#1497;&#1513;&#1512;&#1488;&#1500;&#1497;&#1497;&#1501; &#1492;&#1502;&#1493;&#1489;&#1492;&#1511;&#1497;&#1501; &#1489;&#1497;&#1493;&#1514;&#1512;.</p>
+					<div class="actors-container">
+						<p><b>&#1513;&#1495;&#1511;&#1504;&#1497;&#1501; &#187;</b><br>
+						<div class="actors">
+							
+							<a class="actor-container" href="http://www.imdb.com/name/nm0251870">
+								<div class="actor-image-container">
+									<img class="actor-image" src="../gif/no-photo.jpg" />
+								</div>
+								<div class="actor-name">Arik Einstein</div>
+								<div class="character-name">Eli</div>
+							</a>
+							
 
-            <section class="actor-paragraph">
-                <span class="actor-image-container">
-                    <a href="http://www.imdb.com/name/nm0957612"><img class="actor-image" src="../gif/no-photo.jpg" alt="photo Uri Zohar" /></a>
-                </span>
-                <span class="actor-name">Uri Zohar</span>
-                <span class="character-name">Gutte</span>
-            </section>
-            
+							<a class="actor-container" href="http://www.imdb.com/name/nm0957612">
+								<div class="actor-image-container">
+									<img class="actor-image" src="../gif/no-photo.jpg" />
+								</div>
+								<div class="actor-name">Uri Zohar</div>
+								<div class="character-name">Gutte</div>
+							</a>
+							
 
-            <section class="actor-paragraph">
-                <span class="actor-image-container">
-                    <a href="http://www.imdb.com/name/nm0253735"><img class="actor-image" src="../gif/no-photo.jpg" alt="photo Sima Eliyahu" /></a>
-                </span>
-                <span class="actor-name">Sima Eliyahu</span>
-                <span class="character-name">Mili</span>
-            </section>
-            
+							<a class="actor-container" href="http://www.imdb.com/name/nm0253735">
+								<div class="actor-image-container">
+									<img class="actor-image" src="../gif/no-photo.jpg" />
+								</div>
+								<div class="actor-name">Sima Eliyahu</div>
+								<div class="character-name">Mili</div>
+							</a>
+							
 
-            <section class="actor-paragraph">
-                <span class="actor-image-container">
-                    <a href="http://www.imdb.com/name/nm0797912"><img class="actor-image" src="../gif/no-photo.jpg" alt="photo Mona Silberstein" /></a>
-                </span>
-                <span class="actor-name">Mona Silberstein</span>
-                <span class="character-name">Dina</span>
-            </section>
-            
+							<a class="actor-container" href="http://www.imdb.com/name/nm0797912">
+								<div class="actor-image-container">
+									<img class="actor-image" src="../gif/no-photo.jpg" />
+								</div>
+								<div class="actor-name">Mona Silberstein</div>
+								<div class="character-name">Dina</div>
+							</a>
+							
 
-            <section class="actor-paragraph">
-                <span class="actor-image-container">
-                    <a href="http://www.imdb.com/name/nm0794456"><img class="actor-image" src="../gif/no-photo.jpg" alt="photo Tzvi Shissel" /></a>
-                </span>
-                <span class="actor-name">Tzvi Shissel</span>
-                <span class="character-name">Davidke</span>
-            </section>
-            
+							<a class="actor-container" href="http://www.imdb.com/name/nm0794456">
+								<div class="actor-image-container">
+									<img class="actor-image" src="../gif/no-photo.jpg" />
+								</div>
+								<div class="actor-name">Tzvi Shissel</div>
+								<div class="character-name">Davidke</div>
+							</a>
+							
 
-            </p>
-            <p><b>&#1502;&#1491;&#1497;&#1493;&#1501;</b> Media file, </p>
-            
-            
-            <p><b>&#1502;&#1497;&#1511;&#1493;&#1501; &#1489;&#1502;&#1495;&#1513;&#1489; &#187;</b> \\TICHONETMYCLOUD\Tichonet_movies\&#1505;&#1512;&#1496;&#1497;&#1501; &#1514;&#1497;&#1499;&#1493;&#1504;&#1496;\&#1505;&#1512;&#1496;&#1497;&#1501; &#1502;&#1490;&#1502;&#1514; &#1511;&#1493;&#1500;&#1504;&#1493;&#1506;\&#1502;&#1510;&#1497;&#1510;&#1497;&#1501;\&#1502;&#1510;&#1497;&#1510;&#1497;&#1501; 1972.avi</p>
-            <p><b>&#1502;&#1493;&#1513;&#1488;&#1500;</b> &#1500;&#1488;</p>
-            <p><b>&#1497;&#1495;&#1505; &#1492;&#1502;&#1502;&#1491;&#1497;&#1501;</b> 2.35:1</p>
-        </div>
-    </div>
-    <div class="footer">
-        <p>Created with EMDB V3.17 (C) 2005-2018 No Rights Reserved ;)</p>
-    </div>
-</body>
+						</div>
+						</p>
+					</div>
+					<p><b>Custom Field 1:</b> </p>
+					<p><b>Custom Field 2:</b> </p>
+					
+					<p><b>&#1502;&#1491;&#1497;&#1493;&#1501;</b> Media file &nbsp;&nbsp;<b>&#1502;&#1511;&#1493;&#1512;:</b> DVD &nbsp;&nbsp;<b>&#1502;&#1493;&#1513;&#1488;&#1500;</b> &#1500;&#1488; &nbsp;&nbsp;<b>File Size:</b> 1.37 GB</p>
+					<p><b>&#1502;&#1505;&#1508;&#1512;</b> 248 &nbsp;&nbsp;<b>Custom Number:</b>  &nbsp;&nbsp;<b>&#1502;&#1497;&#1511;&#1493;&#1501; &#1489;&#1502;&#1495;&#1513;&#1489; &#187;</b> \\TICHONETMYCLOUD\Tichonet_movies\&#1505;&#1512;&#1496;&#1497;&#1501; &#1514;&#1497;&#1499;&#1493;&#1504;&#1496;\&#1505;&#1512;&#1496;&#1497;&#1501; &#1502;&#1490;&#1502;&#1514; &#1511;&#1493;&#1500;&#1504;&#1493;&#1506;\&#1502;&#1510;&#1497;&#1510;&#1497;&#1501;\&#1502;&#1510;&#1497;&#1510;&#1497;&#1501; 1972.avi</p>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div class="inner">
+				<a class="to_top" href="#header">^</a>
+				<div style="float: left">Dark Comfort by <a href="mailto:regiprogi@gmail.com">R3gi</a></div>
+				<div>Created with EMDB V3.17 (C) 2005-2018 No Rights Reserved ;)</div>
+			</div>
+		</footer>
+	</body>
 </html>

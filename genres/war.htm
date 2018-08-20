@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<!-- EMDb Template "Dark Comfort" by R3gi, Czech Republic, 2016.05.10 -->
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link href="../style.css" rel="stylesheet" type="text/css" />
+		<title>EMDB - Genres - &#1502;&#1500;&#1495;&#1502;&#1492;</title>
+		<!-- Sticky menu -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+		<script>
+			var sticky_element = ".menu"; // CSS ID or CLASS name of the element to stick
+			var sticky_element_clean = sticky_element.substring(1, sticky_element.length);
+			$(function() {
+				createSticky($(sticky_element));
+			});
+			function createSticky(sticky) {
+				$('<div id="' + sticky_element_clean + '_phantom"></div>').insertBefore(sticky_element); // Phantom prevents jump
+				if (typeof sticky !== "undefined") {
+					var pos = sticky.offset().top,
+						win = $(window);
+
+					win.on("scroll", function() {
+						if (win.scrollTop() >= pos) {
+							var phantomHeight = $(sticky_element).outerHeight();
+							sticky.addClass("fixed");
+							$('#' + sticky_element_clean + '_phantom').height(phantomHeight).show();
+
+							// Fix for anchor links position
+							var anchorOffset = '-' + phantomHeight + 'px';
+							$('.anchor').css({'visibility': 'hidden','display': 'block','position': 'relative','top': anchorOffset,});
+						} else {
+							sticky.removeClass("fixed");
+							$('#' + sticky_element_clean + '_phantom').hide();
+						}
+					});
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<div id="header">
+			<div class="inner">
+				<div class="link_db">
+					<a href="http://www.imdb.com" target="_blank" alt="IMDB">IMDB</a>|<a href="http://www.emdb.eu" target="_blank" alt="EMDB">EMDB</a>
+				</div>
+				<div class="title_box"><div class="title">Genres - &#1502;&#1500;&#1495;&#1502;&#1492;</div></div>
+			</div>
+			<div class="navigation menu">
+				<div class="in">
+					<a href="../index.htm" class="category">EMDB</a>
+					<a href="../index.htm#genres" class="category"> > Genres</a>
+					<a href="war.htm" class="category"> > &#1502;&#1500;&#1495;&#1502;&#1492;</a>
+				</div>
+			</div>
+		</div>
+		<div id="wrap">
+			<div class="category">
+				<div class="category">
+			<li class="thumbnail" href="../movies/225.htm">
+				<a href="../movies/225.htm"><img src="../covers/000681.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/225.htm">All My Sons | &#1499;&#1493;&#1500;&#1501; &#1492;&#1497;&#1493; &#1489;&#1504;&#1497;
+			&nbsp;(1987)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/112.htm">
+				<a href="../movies/112.htm"><img src="../covers/000548.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/112.htm">Apocalypse Now | &#1488;&#1508;&#1493;&#1511;&#1500;&#1497;&#1508;&#1505;&#1492; &#1506;&#1499;&#1513;&#1497;&#1493;
+			&nbsp;(1979)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/103.htm">
+				<a href="../movies/103.htm"><img src="../covers/000537.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/103.htm">Avanti popolo | &#1488;&#1493;&#1493;&#1504;&#1496;&#1497; &#1508;&#1493;&#1508;&#1493;&#1500;&#1493;
+			&nbsp;(1986)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/118.htm">
+				<a href="../movies/118.htm"><img src="../covers/000554.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/118.htm">Beaufort | &#1489;&#1493;&#1508;&#1493;&#1512;
+			&nbsp;(2007)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/94.htm">
+				<a href="../movies/94.htm"><img src="../covers/000528.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/94.htm">The Birth of a Nation | &#1492;&#1493;&#1500;&#1491;&#1514; &#1488;&#1493;&#1502;&#1492;
+			&nbsp;(1915)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/351.htm">
+				<a href="../movies/351.htm"><img src="../covers/000830.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/351.htm">The Book Thief | &#1490;&#1504;&#1489;&#1514; &#1492;&#1505;&#1508;&#1512;&#1497;&#1501;
+			&nbsp;(2013)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/272.htm">
+				<a href="../movies/272.htm"><img src="../covers/000735.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/272.htm">The Boy in the Striped Pajamas | &#1492;&#1504;&#1506;&#1512; &#1489;&#1508;&#1497;&#1490;'&#1502;&#1514; &#1492;&#1508;&#1505;&#1497;&#1501;
+			&nbsp;(2008)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/207.htm">
+				<a href="../movies/207.htm"><img src="../covers/000660.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/207.htm">Casablanca | &#1511;&#1494;&#1489;&#1500;&#1504;&#1511;&#1492;
+			&nbsp;(1942)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/258.htm">
+				<a href="../movies/258.htm"><img src="../covers/000719.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/258.htm">Escape from Sobibor | &#1492;&#1489;&#1512;&#1497;&#1495;&#1492; &#1502;&#1505;&#1493;&#1489;&#1497;&#1489;&#1493;&#1512;
+			&nbsp;(1987)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/131.htm">
+				<a href="../movies/131.htm"><img src="../covers/000568.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/131.htm">The Great Dictator | &#1492;&#1491;&#1497;&#1511;&#1496;&#1496;&#1493;&#1512; &#1492;&#1490;&#1491;&#1493;&#1500;
+			&nbsp;(1940)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/213.htm">
+				<a href="../movies/213.htm"><img src="../covers/000667.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/213.htm">Hair | &#1513;&#1497;&#1506;&#1512;
+			&nbsp;(1979)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/177.htm">
+				<a href="../movies/177.htm"><img src="../covers/000625.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/177.htm">Inglourious Basterds | &#1502;&#1502;&#1494;&#1512;&#1497;&#1501; &#1495;&#1505;&#1512;&#1497; &#1499;&#1489;&#1493;&#1491;
+			&nbsp;(2009)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/251.htm">
+				<a href="../movies/251.htm"><img src="../covers/000712.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/251.htm">King David | &#1492;&#1502;&#1500;&#1498; &#1491;&#1493;&#1491; (&#1500;&#1488; &#1502;&#1514;&#1493;&#1512;&#1490;&#1501;)
+			&nbsp;(1985)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/322.htm">
+				<a href="../movies/322.htm"><img src="../covers/000792.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/322.htm">Les Mis&#233;rables | &#1506;&#1500;&#1493;&#1489;&#1497; &#1492;&#1495;&#1497;&#1497;&#1501;
+			&nbsp;(2012)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/294.htm">
+				<a href="../movies/294.htm"><img src="../covers/000760.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/294.htm">Lincoln | &#1500;&#1497;&#1504;&#1511;&#1493;&#1500;&#1503;
+			&nbsp;(2012)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/352.htm">
+				<a href="../movies/352.htm"><img src="../covers/000831.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/352.htm">The Messenger | &#1492;&#1513;&#1500;&#1497;&#1495;
+			&nbsp;(2009)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/350.htm">
+				<a href="../movies/350.htm"><img src="../covers/000829.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/350.htm">The Monuments Men | &#1510;&#1497;&#1497;&#1491;&#1497; &#1492;&#1488;&#1493;&#1510;&#1512;&#1493;&#1514;
+			&nbsp;(2014)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/212.htm">
+				<a href="../movies/212.htm"><img src="../covers/000666.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/212.htm">No Man's Land | &#1513;&#1496;&#1495; &#1492;&#1508;&#1511;&#1512;
+			&nbsp;(2001)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/142.htm">
+				<a href="../movies/142.htm"><img src="../covers/000579.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/142.htm">The Pianist | &#1492;&#1508;&#1505;&#1504;&#1514;&#1512;&#1503;
+			&nbsp;(2002)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/348.htm">
+				<a href="../movies/348.htm"><img src="../covers/000827.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/348.htm">A Secret | &#1505;&#1493;&#1491;
+			&nbsp;(2007)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/333.htm">
+				<a href="../movies/333.htm"><img src="../covers/000810.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/333.htm">Train of Life | &#1512;&#1499;&#1489;&#1514; &#1492;&#1495;&#1497;&#1497;&#1501;
+			&nbsp;(1998)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/320.htm">
+				<a href="../movies/320.htm"><img src="../covers/000789.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/320.htm">Triumph of the Spirit | &#1504;&#1497;&#1510;&#1495;&#1493;&#1503; &#1492;&#1512;&#1493;&#1495;
+			&nbsp;(1989)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/151.htm">
+				<a href="../movies/151.htm"><img src="../covers/000595.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/151.htm">Waltz with Bashir | &#1493;&#1488;&#1500;&#1505; &#1506;&#1501; &#1489;&#1488;&#1513;&#1497;&#1512;
+			&nbsp;(2008)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/279.htm">
+				<a href="../movies/279.htm"><img src="../covers/000742.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/279.htm">Wonder Woman | &#1493;&#1493;&#1504;&#1491;&#1512; &#1493;&#1493;&#1502;&#1503;
+			&nbsp;(2017)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/48.htm">
+				<a href="../movies/48.htm"><img src="../covers/000465.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/48.htm">&#1490;&#1503; &#1506;&#1491;&#1503; &#1506;&#1499;&#1513;&#1497;&#1493;
+			&nbsp;(2005)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/51.htm">
+				<a href="../movies/51.htm"><img src="../covers/000468.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/51.htm">&#1506;&#1509; &#1500;&#1497;&#1502;&#1493;&#1503;
+			&nbsp;(2008)
+			</a>
+				</div>
+			</li>
+			
+</div>
+			</div>
+		</div>
+		<footer>
+			<div class="inner">
+				<a class="to_top" href="#header">^</a>
+				<div style="float: left">Dark Comfort by <a href="mailto:regiprogi@gmail.com">R3gi</a></div>
+				<div>Created with EMDB V3.18 (C) 2005-2018 No Rights Reserved ;)</div>
+			</div>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<!-- EMDb Template "Dark Comfort" by R3gi, Czech Republic, 2016.05.10 -->
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link href="../style.css" rel="stylesheet" type="text/css" />
+		<title>EMDB - Genres - &#1502;&#1491;&#1506;&#1497;&#1501;</title>
+		<!-- Sticky menu -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+		<script>
+			var sticky_element = ".menu"; // CSS ID or CLASS name of the element to stick
+			var sticky_element_clean = sticky_element.substring(1, sticky_element.length);
+			$(function() {
+				createSticky($(sticky_element));
+			});
+			function createSticky(sticky) {
+				$('<div id="' + sticky_element_clean + '_phantom"></div>').insertBefore(sticky_element); // Phantom prevents jump
+				if (typeof sticky !== "undefined") {
+					var pos = sticky.offset().top,
+						win = $(window);
+
+					win.on("scroll", function() {
+						if (win.scrollTop() >= pos) {
+							var phantomHeight = $(sticky_element).outerHeight();
+							sticky.addClass("fixed");
+							$('#' + sticky_element_clean + '_phantom').height(phantomHeight).show();
+
+							// Fix for anchor links position
+							var anchorOffset = '-' + phantomHeight + 'px';
+							$('.anchor').css({'visibility': 'hidden','display': 'block','position': 'relative','top': anchorOffset,});
+						} else {
+							sticky.removeClass("fixed");
+							$('#' + sticky_element_clean + '_phantom').hide();
+						}
+					});
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<div id="header">
+			<div class="inner">
+				<div class="link_db">
+					<a href="http://www.imdb.com" target="_blank" alt="IMDB">IMDB</a>|<a href="http://www.emdb.eu" target="_blank" alt="EMDB">EMDB</a>
+				</div>
+				<div class="title_box"><div class="title">Genres - &#1502;&#1491;&#1506;&#1497;&#1501;</div></div>
+			</div>
+			<div class="navigation menu">
+				<div class="in">
+					<a href="../index.htm" class="category">EMDB</a>
+					<a href="../index.htm#genres" class="category"> > Genres</a>
+					<a href="custom--2.htm" class="category"> > &#1502;&#1491;&#1506;&#1497;&#1501;</a>
+				</div>
+			</div>
+		</div>
+		<div id="wrap">
+			<div class="category">
+				<div class="category">
+			<li class="thumbnail" href="../movies/45.htm">
+				<a href="../movies/45.htm"><img src="../covers/000462.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/45.htm">An Inconvenient Truth | &#1488;&#1502;&#1514; &#1502;&#1496;&#1512;&#1497;&#1491;&#1492;
+			&nbsp;(2006)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/83.htm">
+				<a href="../movies/83.htm"><img src="../covers/000500.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/83.htm">BBC The Human Body Raging teens - &#1506;&#1493;&#1504;&#1492; ???
+			&nbsp;(1998)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/82.htm">
+				<a href="../movies/82.htm"><img src="../covers/000499.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/82.htm">BBC: The Human Body - &#1506;&#1493;&#1504;&#1492; 01
+			&nbsp;(1998)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/75.htm">
+				<a href="../movies/75.htm"><img src="../covers/000492.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/75.htm">Enchanted Kingdom | &#1506;&#1493;&#1500;&#1501; &#1504;&#1508;&#1500;&#1488;
+			&nbsp;(2014)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/53.htm">
+				<a href="../movies/53.htm"><img src="../covers/000470.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/53.htm">Extraordinary Measures | &#1488;&#1502;&#1510;&#1506;&#1497;&#1501; &#1497;&#1493;&#1510;&#1488;&#1497; &#1491;&#1493;&#1508;&#1503;
+			&nbsp;(2010)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/301.htm">
+				<a href="../movies/301.htm"><img src="../covers/000767.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/301.htm">Gattaca | &#1502;&#1492; &#1511;&#1512;&#1492; &#1489;&#1490;&#1496;&#1511;&#1492;
+			&nbsp;(1997)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/64.htm">
+				<a href="../movies/64.htm"><img src="../covers/000481.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/64.htm">Great Migrations | &#1492;&#1504;&#1491;&#1497;&#1491;&#1492; &#1492;&#1490;&#1491;&#1493;&#1500;&#1492; - &#1506;&#1493;&#1504;&#1492; 01
+			&nbsp;(2010)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/73.htm">
+				<a href="../movies/73.htm"><img src="../covers/000490.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/73.htm">Hidden Kingdoms | &#1502;&#1502;&#1500;&#1499;&#1493;&#1514; &#1504;&#1505;&#1514;&#1512;&#1493;&#1514; - &#1506;&#1493;&#1504;&#1492; 01
+			&nbsp;(2014)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/54.htm">
+				<a href="../movies/54.htm"><img src="../covers/000471.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/54.htm">In the Womb | &#1489;&#1514;&#1493;&#1498; &#1492;&#1512;&#1495;&#1501;
+			&nbsp;(2005)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/57.htm">
+				<a href="../movies/57.htm"><img src="../covers/000474.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/57.htm">John Q | &#1490;'&#1493;&#1503; &#1511;&#1497;&#1493;
+			&nbsp;(2002)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/77.htm">
+				<a href="../movies/77.htm"><img src="../covers/000494.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/77.htm">The Lorax | &#1492;&#1500;&#1493;&#1512;&#1511;&#1505;
+			&nbsp;(2012)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/65.htm">
+				<a href="../movies/65.htm"><img src="../covers/000482.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/65.htm">Lorenzo's Oil | &#1492;&#1513;&#1502;&#1503; &#1513;&#1500; &#1500;&#1493;&#1512;&#1504;&#1510;&#1493;
+			&nbsp;(1992)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/67.htm">
+				<a href="../movies/67.htm"><img src="../covers/000484.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/67.htm">Lucy | &#1500;&#1493;&#1505;&#1497;
+			&nbsp;(2014)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/66.htm">
+				<a href="../movies/66.htm"><img src="../covers/000483.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/66.htm">Outbreak | &#1492;&#1514;&#1508;&#1512;&#1510;&#1493;&#1514;
+			&nbsp;(1995)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/76.htm">
+				<a href="../movies/76.htm"><img src="../covers/000493.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/76.htm">Philadelphia | &#1508;&#1497;&#1500;&#1491;&#1500;&#1508;&#1497;&#1492;
+			&nbsp;(1993)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/70.htm">
+				<a href="../movies/70.htm"><img src="../covers/000487.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/70.htm">The Queen of Trees | &#1502;&#1500;&#1499;&#1514; &#1492;&#1497;&#1506;&#1512;
+			&nbsp;(2005)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/3.htm">
+				<a href="../movies/3.htm"><img src="../covers/000420.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/3.htm">Waste Land | &#1492;&#1488;&#1502;&#1504;&#1493;&#1514; &#1489;&#1494;&#1489;&#1500;
+			&nbsp;(2010)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/56.htm">
+				<a href="../movies/56.htm"><img src="../covers/000473.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/56.htm">&#1488;&#1512;&#1509; &#1489;&#1512;&#1488;&#1513;&#1497;&#1514;
+			&nbsp;(2010)
+			</a>
+				</div>
+			</li>
+			
+</div>
+			</div>
+		</div>
+		<footer>
+			<div class="inner">
+				<a class="to_top" href="#header">^</a>
+				<div style="float: left">Dark Comfort by <a href="mailto:regiprogi@gmail.com">R3gi</a></div>
+				<div>Created with EMDB V3.18 (C) 2005-2018 No Rights Reserved ;)</div>
+			</div>
+		</footer>
+	</body>
+</html>

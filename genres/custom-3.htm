@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<!-- EMDb Template "Dark Comfort" by R3gi, Czech Republic, 2016.05.10 -->
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link href="../style.css" rel="stylesheet" type="text/css" />
+		<title>EMDB - Genres - &#1497;&#1513;&#1512;&#1488;&#1500;&#1497;</title>
+		<!-- Sticky menu -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+		<script>
+			var sticky_element = ".menu"; // CSS ID or CLASS name of the element to stick
+			var sticky_element_clean = sticky_element.substring(1, sticky_element.length);
+			$(function() {
+				createSticky($(sticky_element));
+			});
+			function createSticky(sticky) {
+				$('<div id="' + sticky_element_clean + '_phantom"></div>').insertBefore(sticky_element); // Phantom prevents jump
+				if (typeof sticky !== "undefined") {
+					var pos = sticky.offset().top,
+						win = $(window);
+
+					win.on("scroll", function() {
+						if (win.scrollTop() >= pos) {
+							var phantomHeight = $(sticky_element).outerHeight();
+							sticky.addClass("fixed");
+							$('#' + sticky_element_clean + '_phantom').height(phantomHeight).show();
+
+							// Fix for anchor links position
+							var anchorOffset = '-' + phantomHeight + 'px';
+							$('.anchor').css({'visibility': 'hidden','display': 'block','position': 'relative','top': anchorOffset,});
+						} else {
+							sticky.removeClass("fixed");
+							$('#' + sticky_element_clean + '_phantom').hide();
+						}
+					});
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<div id="header">
+			<div class="inner">
+				<div class="link_db">
+					<a href="http://www.imdb.com" target="_blank" alt="IMDB">IMDB</a>|<a href="http://www.emdb.eu" target="_blank" alt="EMDB">EMDB</a>
+				</div>
+				<div class="title_box"><div class="title">Genres - &#1497;&#1513;&#1512;&#1488;&#1500;&#1497;</div></div>
+			</div>
+			<div class="navigation menu">
+				<div class="in">
+					<a href="../index.htm" class="category">EMDB</a>
+					<a href="../index.htm#genres" class="category"> > Genres</a>
+					<a href="custom--3.htm" class="category"> > &#1497;&#1513;&#1512;&#1488;&#1500;&#1497;</a>
+				</div>
+			</div>
+		</div>
+		<div id="wrap">
+			<div class="category">
+				<div class="category">
+			<li class="thumbnail" href="../movies/103.htm">
+				<a href="../movies/103.htm"><img src="../covers/000537.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/103.htm">Avanti popolo | &#1488;&#1493;&#1493;&#1504;&#1496;&#1497; &#1508;&#1493;&#1508;&#1493;&#1500;&#1493;
+			&nbsp;(1986)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/118.htm">
+				<a href="../movies/118.htm"><img src="../covers/000554.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/118.htm">Beaufort | &#1489;&#1493;&#1508;&#1493;&#1512;
+			&nbsp;(2007)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/128.htm">
+				<a href="../movies/128.htm"><img src="../covers/000565.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/128.htm">B'Yerushalaim | &#1491;&#1493;&#1491; &#1508;&#1512;&#1500;&#1493;&#1489; &#1489;&#1497;&#1512;&#1493;&#1513;&#1500;&#1497;&#1501;
+			&nbsp;(1963)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/14.htm">
+				<a href="../movies/14.htm"><img src="../covers/000431.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/14.htm">Clockwork Doll | &#1489;&#1493;&#1489;&#1492; &#1502;&#1502;&#1493;&#1499;&#1504;&#1514;
+			&nbsp;(2015)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/125.htm">
+				<a href="../movies/125.htm"><img src="../covers/000562.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/125.htm">Gett: The Trial of Viviane Amsalem | &#1490;&#1496;: &#1492;&#1502;&#1513;&#1508;&#1496; &#1513;&#1500; &#1493;&#1497;&#1493;&#1497;&#1488;&#1503; &#1488;&#1502;&#1505;&#1500;&#1501;
+			&nbsp;(2014)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/166.htm">
+				<a href="../movies/166.htm"><img src="../covers/000612.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/166.htm">In Between | &#1500;&#1488; &#1508;&#1492; &#1500;&#1488; &#1513;&#1501;
+			&nbsp;(2016)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/122.htm">
+				<a href="../movies/122.htm"><img src="../covers/000559.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/122.htm">Late Summer Blues | &#1489;&#1500;&#1493;&#1494; &#1500;&#1495;&#1493;&#1508;&#1513; &#1492;&#1490;&#1491;&#1493;&#1500;
+			&nbsp;(1987)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/121.htm">
+				<a href="../movies/121.htm"><img src="../covers/000557.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/121.htm">Underdogs: A War Movie | &#1489;&#1497;&#1514; &#1513;&#1488;&#1503;: &#1505;&#1512;&#1496; &#1502;&#1500;&#1495;&#1502;&#1492;
+			&nbsp;(1996)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/152.htm">
+				<a href="../movies/152.htm"><img src="../covers/000596.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/152.htm">Vasermil | &#1493;&#1505;&#1512;&#1502;&#1497;&#1500;
+			&nbsp;(2007)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/151.htm">
+				<a href="../movies/151.htm"><img src="../covers/000595.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/151.htm">Waltz with Bashir | &#1493;&#1488;&#1500;&#1505; &#1506;&#1501; &#1489;&#1488;&#1513;&#1497;&#1512;
+			&nbsp;(2008)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/288.htm">
+				<a href="../movies/288.htm"><img src="../covers/000751.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/288.htm">Yona | &#1497;&#1493;&#1504;&#1492;
+			&nbsp;(2014)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/113.htm">
+				<a href="../movies/113.htm"><img src="../covers/000549.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/113.htm">Zero Motivation | &#1488;&#1508;&#1505; &#1489;&#1497;&#1495;&#1505;&#1497; &#1488;&#1504;&#1493;&#1513;
+			&nbsp;(2014)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/233.htm">
+				<a href="../movies/233.htm"><img src="../covers/000692.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/233.htm">&#1488;&#1489;&#1493;&#1500;&#1500;&#1492;
+			&nbsp;(2015)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/99.htm">
+				<a href="../movies/99.htm"><img src="../covers/000533.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/99.htm">&#1488;&#1489;&#1497;&#1489;&#1492; &#1488;&#1492;&#1493;&#1489;&#1514;&#1497;
+			&nbsp;(2006)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/104.htm">
+				<a href="../movies/104.htm"><img src="../covers/000538.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/104.htm">&#1488;&#1493;&#1512;
+			&nbsp;(2004)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/107.htm">
+				<a href="../movies/107.htm"><img src="../covers/000541.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/107.htm">&#1488;&#1495;&#1512;&#1497;&#1497;&#1498;
+			&nbsp;(2017)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/238.htm">
+				<a href="../movies/238.htm"><img src="../covers/000697.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/238.htm">&#1488;&#1497;&#1500;&#1497; &#1493;&#1489;&#1503;
+			&nbsp;(2008)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/56.htm">
+				<a href="../movies/56.htm"><img src="../covers/000473.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/56.htm">&#1488;&#1512;&#1509; &#1489;&#1512;&#1488;&#1513;&#1497;&#1514;
+			&nbsp;(2010)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/15.htm">
+				<a href="../movies/15.htm"><img src="../covers/001040.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/15.htm">&#1488;&#1512;&#1509; &#1500;&#1489;&#1504;&#1492; &#1508;&#1512;&#1511; 1
+			&nbsp;(2018)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/21.htm">
+				<a href="../movies/21.htm"><img src="../covers/001041.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/21.htm">&#1488;&#1512;&#1509; &#1500;&#1489;&#1504;&#1492; &#1508;&#1512;&#1511; 2
+			&nbsp;(2018)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/26.htm">
+				<a href="../movies/26.htm"><img src="../covers/001042.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/26.htm">&#1488;&#1512;&#1509; &#1500;&#1489;&#1504;&#1492; &#1508;&#1512;&#1511; 3
+			&nbsp;(2018)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/28.htm">
+				<a href="../movies/28.htm"><img src="../covers/001043.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/28.htm">&#1488;&#1512;&#1509; &#1500;&#1489;&#1504;&#1492; &#1508;&#1512;&#1511; 4
+			&nbsp;(2018)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/30.htm">
+				<a href="../movies/30.htm"><img src="../covers/001044.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/30.htm">&#1488;&#1512;&#1509; &#1500;&#1489;&#1504;&#1492; &#1508;&#1512;&#1511; 5
+			&nbsp;(2018)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/47.htm">
+				<a href="../movies/47.htm"><img src="../covers/000464.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/47.htm">&#1489;&#1497;&#1511;&#1493;&#1512; &#1492;&#1514;&#1494;&#1502;&#1493;&#1512;&#1514;
+			&nbsp;(2007)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/357.htm">
+				<a href="../movies/357.htm"><img src="../covers/000836.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/357.htm">&#1489;&#1502;&#1512;&#1495;&#1511; &#1508;&#1506;&#1497;&#1502;&#1492; 
+			&nbsp;(2015)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/6.htm">
+				<a href="../movies/6.htm"><img src="../covers/000423.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/6.htm">&#1489;&#1503; &#1490;&#1493;&#1512;&#1497;&#1493;&#1503;, &#1488;&#1508;&#1497;&#1500;&#1493;&#1490;
+			&nbsp;(2016)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/48.htm">
+				<a href="../movies/48.htm"><img src="../covers/000465.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/48.htm">&#1490;&#1503; &#1506;&#1491;&#1503; &#1506;&#1499;&#1513;&#1497;&#1493;
+			&nbsp;(2005)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/7.htm">
+				<a href="../movies/7.htm"><img src="../covers/000424.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/7.htm">&#1491;&#1493;&#1491; &#1508;&#1512;&#1500;&#1493;&#1489;: &#1497;&#1493;&#1502;&#1503; 1
+			&nbsp;(1983)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/8.htm">
+				<a href="../movies/8.htm"><img src="../covers/000425.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/8.htm">&#1491;&#1493;&#1491; &#1508;&#1512;&#1500;&#1493;&#1489;: &#1497;&#1493;&#1502;&#1503; 2
+			&nbsp;(1983)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/9.htm">
+				<a href="../movies/9.htm"><img src="../covers/000426.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/9.htm">&#1491;&#1493;&#1491; &#1508;&#1512;&#1500;&#1493;&#1489;: &#1497;&#1493;&#1502;&#1503; 3
+			&nbsp;(1983)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/10.htm">
+				<a href="../movies/10.htm"><img src="../covers/000427.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/10.htm">&#1491;&#1493;&#1491; &#1508;&#1512;&#1500;&#1493;&#1489;: &#1497;&#1493;&#1502;&#1503; 4
+			&nbsp;(1983)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/11.htm">
+				<a href="../movies/11.htm"><img src="../covers/000428.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/11.htm">&#1491;&#1493;&#1491; &#1508;&#1512;&#1500;&#1493;&#1489;: &#1497;&#1493;&#1502;&#1503; 5
+			&nbsp;(1983)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/12.htm">
+				<a href="../movies/12.htm"><img src="../covers/000429.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/12.htm">&#1491;&#1493;&#1491; &#1508;&#1512;&#1500;&#1493;&#1489;: &#1497;&#1493;&#1502;&#1503; 6
+			&nbsp;(1983)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/236.htm">
+				<a href="../movies/236.htm"><img src="../covers/000695.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/236.htm">&#1492;&#1488;&#1493;&#1513;&#1508;&#1497;&#1494;&#1497;&#1503;
+			&nbsp;(2004)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/257.htm">
+				<a href="../movies/257.htm"><img src="../covers/000718.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/257.htm">&#1492;&#1489;&#1493;&#1506;&#1492;
+			&nbsp;(2006)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/132.htm">
+				<a href="../movies/132.htm"><img src="../covers/000569.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/132.htm">&#1492;&#1492;&#1512;&#1493;&#1490; &#1492;-17
+			&nbsp;(2003)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/84.htm">
+				<a href="../movies/84.htm"><img src="../covers/000518.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/84.htm">&#1492;&#1493;&#1488; &#1492;&#1500;&#1498; &#1489;&#1513;&#1491;&#1493;&#1514;
+			&nbsp;(1967)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/262.htm">
+				<a href="../movies/262.htm"><img src="../covers/000723.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/262.htm">&#1492;&#1495;&#1493;&#1489;
+			&nbsp;(2007)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/136.htm">
+				<a href="../movies/136.htm"><img src="../covers/000573.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/136.htm">&#1492;&#1499;&#1493;&#1499;&#1489;&#1497;&#1501; &#1513;&#1500; &#1513;&#1500;&#1493;&#1502;&#1497;
+			&nbsp;(2003)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/49.htm">
+				<a href="../movies/49.htm"><img src="../covers/000466.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/49.htm">&#1492;&#1499;&#1500;&#1492; &#1492;&#1505;&#1493;&#1512;&#1497;&#1514;
+			&nbsp;(2004)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/265.htm">
+				<a href="../movies/265.htm"><img src="../covers/000728.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/265.htm">&#1492;&#1500;&#1492;&#1511;&#1492; &#1492;&#1488;&#1495;&#1512;&#1493;&#1504;&#1492; &#1489;&#1500;&#1489;&#1504;&#1493;&#1503;
+			&nbsp;(2016)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/18.htm">
+				<a href="../movies/18.htm"><img src="../covers/000435.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/18.htm">&#1492;&#1502;&#1506;&#1512;&#1499;&#1514; &#1506;&#1501; &#1502;&#1497;&#1511;&#1497; &#1495;&#1497;&#1497;&#1502;&#1493;&#1489;&#1497;&#1509;' -  &#1500;&#1497;&#1508;&#1493;&#1500; &#1502;&#1490;&#1503; &#1506;&#1491;&#1503;
+			&nbsp;(2014)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/17.htm">
+				<a href="../movies/17.htm"><img src="../covers/000434.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/17.htm">&#1492;&#1502;&#1506;&#1512;&#1499;&#1514; &#1506;&#1501; &#1502;&#1497;&#1511;&#1497; &#1495;&#1497;&#1497;&#1502;&#1493;&#1489;&#1497;&#1509;' -  &#1513;&#1489;&#1506;&#1514; &#1502;&#1491;&#1493;&#1512;&#1497; &#1492;&#1490;&#1497;&#1492;&#1504;&#1493;&#1501; &#8226; &#1514;&#1495;&#1511;&#1497;&#1512; &#1506;&#1500; &#1492;&#1491;&#1497;&#1493;&#1512; &#1492;&#1510;&#1497;&#1489;&#1493;&#1512;&#1497;
+			&nbsp;(2014)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/20.htm">
+				<a href="../movies/20.htm"><img src="../covers/000437.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/20.htm">&#1492;&#1502;&#1506;&#1512;&#1499;&#1514; &#1506;&#1501; &#1502;&#1497;&#1511;&#1497; &#1495;&#1497;&#1497;&#1502;&#1493;&#1489;&#1497;&#1509;' - &#1504;&#1497;&#1505;&#1493;&#1497; &#1511;&#1493; &#1492;&#1506;&#1493;&#1504;&#1497; 
+			&nbsp;(2014)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/19.htm">
+				<a href="../movies/19.htm"><img src="../covers/000436.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/19.htm">&#1492;&#1502;&#1506;&#1512;&#1499;&#1514; &#1506;&#1501; &#1502;&#1497;&#1511;&#1497; &#1495;&#1497;&#1497;&#1502;&#1493;&#1489;&#1497;&#1509;' - &#1514;&#1495;&#1511;&#1497;&#1512; &#1492;&#1489;&#1490;&#1512;&#1493;&#1497;&#1493;&#1514; 
+			&nbsp;(2014)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/270.htm">
+				<a href="../movies/270.htm"><img src="../covers/000733.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/270.htm">&#1492;&#1502;&#1513;&#1490;&#1497;&#1495;&#1497;&#1501;
+			&nbsp;(2012)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/280.htm">
+				<a href="../movies/280.htm"><img src="../covers/000743.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/280.htm">&#1494;&#1493;&#1492;&#1497; &#1505;&#1491;&#1493;&#1501;
+			&nbsp;(2010)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/22.htm">
+				<a href="../movies/22.htm"><img src="../covers/000439.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/22.htm">&#1494;&#1499;&#1493;&#1514; &#1492;&#1510;&#1506;&#1511;&#1492; - &#1502;&#1495;&#1488;&#1492; &#1497;&#1513;&#1512;&#1488;&#1500;&#1497;&#1514; &#1508;&#1512;&#1511; 1
+			&nbsp;(2018)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/23.htm">
+				<a href="../movies/23.htm"><img src="../covers/000440.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/23.htm">&#1494;&#1499;&#1493;&#1514; &#1492;&#1510;&#1506;&#1511;&#1492; - &#1502;&#1495;&#1488;&#1492; &#1497;&#1513;&#1512;&#1488;&#1500;&#1497;&#1514; &#1508;&#1512;&#1511; 2
+			&nbsp;(2018)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/24.htm">
+				<a href="../movies/24.htm"><img src="../covers/000441.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/24.htm">&#1494;&#1499;&#1493;&#1514; &#1492;&#1510;&#1506;&#1511;&#1492; - &#1502;&#1495;&#1488;&#1492; &#1497;&#1513;&#1512;&#1488;&#1500;&#1497;&#1514; &#1508;&#1512;&#1511; 3</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/50.htm">
+				<a href="../movies/50.htm"><img src="../covers/000467.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/50.htm">&#1495;&#1510;&#1493;&#1510;&#1512;&#1492; &#1489;&#1493;&#1488;&#1491;&#1497;
+			&nbsp;(2002)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/157.htm">
+				<a href="../movies/157.htm"><img src="../covers/000603.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/157.htm">&#1495;&#1514;&#1493;&#1504;&#1492; &#1502;&#1488;&#1493;&#1495;&#1512;&#1514;
+			&nbsp;(2001)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/25.htm">
+				<a href="../movies/25.htm"><img src="../covers/000442.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/25.htm">&#1496;&#1492;&#1493;&#1512;&#1492; &#1500;&#1506;&#1491;
+			&nbsp;(2016)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/160.htm">
+				<a href="../movies/160.htm"><img src="../covers/000606.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/160.htm">&#1497;&#1493;&#1504;&#1492; &#1505;&#1497;&#1491;&#1505; &#1502;&#1493;&#1512;&#1492; &#1491;&#1512;&#1498;
+			&nbsp;(1995)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/163.htm">
+				<a href="../movies/163.htm"><img src="../covers/000609.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/163.htm">&#1499;&#1504;&#1508;&#1497;&#1497;&#1501; &#1513;&#1489;&#1493;&#1512;&#1493;&#1514;
+			&nbsp;(2002)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/168.htm">
+				<a href="../movies/168.htm"><img src="../covers/000615.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/168.htm">&#1500;&#1497;&#1500;&#1505;&#1491;&#1492;
+			&nbsp;(1995)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/353.htm">
+				<a href="../movies/353.htm"><img src="../covers/000832.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/353.htm">&#1502;&#1489;&#1510;&#1506; &#1497;&#1493;&#1504;&#1514;&#1503;
+			&nbsp;(1977)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/299.htm">
+				<a href="../movies/299.htm"><img src="../covers/000765.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/299.htm">&#1502;&#1489;&#1510;&#1506; &#1505;&#1489;&#1514;&#1488;
+			&nbsp;(1999)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/303.htm">
+				<a href="../movies/303.htm"><img src="../covers/000770.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/303.htm">&#1502;&#1497;&#1513;&#1492;&#1493; &#1500;&#1512;&#1493;&#1509; &#1488;&#1497;&#1514;&#1493;
+			&nbsp;(2006)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/304.htm">
+				<a href="../movies/304.htm"><img src="../covers/000771.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/304.htm">&#1502;&#1497;&#1514;&#1492; &#1496;&#1493;&#1489;&#1492;
+			&nbsp;(2014)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/305.htm">
+				<a href="../movies/305.htm"><img src="../covers/000772.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/305.htm">&#1502;&#1499;&#1514;&#1493;&#1489;
+			&nbsp;(2017)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/179.htm">
+				<a href="../movies/179.htm"><img src="../covers/000627.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/179.htm">&#1502;&#1505;&#1506;&#1493;&#1514; &#1490;'&#1497;&#1497;&#1502;&#1505; &#1489;&#1488;&#1512;&#1509; &#1492;&#1511;&#1493;&#1491;&#1513;
+			&nbsp;(2003)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/222.htm">
+				<a href="../movies/222.htm"><img src="../covers/000678.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/222.htm">&#1502;&#1510;&#1497;&#1510;&#1497;&#1501;
+			&nbsp;(1972)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/220.htm">
+				<a href="../movies/220.htm"><img src="../covers/000675.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/220.htm">&#1502;&#1511;&#1493;&#1491;&#1513;&#1514;
+			&nbsp;(2004)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/29.htm">
+				<a href="../movies/29.htm"><img src="../covers/000446.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/29.htm">&#1502;&#1512;&#1496;&#1497;&#1503;
+			&nbsp;(1999)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/311.htm">
+				<a href="../movies/311.htm"><img src="../covers/000779.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/311.htm">&#1502;&#1512;&#1499;&#1489;&#1492; &#1497;&#1512;&#1493;&#1511;&#1492;
+			&nbsp;(2005)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/313.htm">
+				<a href="../movies/313.htm"><img src="../covers/000781.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/313.htm">&#1504;&#1493;&#1491;&#1500;
+			&nbsp;(2007)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/31.htm">
+				<a href="../movies/31.htm"><img src="../covers/000448.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/31.htm">&#1505;&#1488;&#1500;&#1495; &#1508;&#1492; &#1494;&#1492; &#1488;&#1512;&#1509; &#1497;&#1513;&#1512;&#1488;&#1500; &#1508;&#1512;&#1511; 1</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/32.htm">
+				<a href="../movies/32.htm"><img src="../covers/000449.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/32.htm">&#1505;&#1488;&#1500;&#1495; &#1508;&#1492; &#1494;&#1492; &#1488;&#1512;&#1509; &#1497;&#1513;&#1512;&#1488;&#1500; &#1508;&#1512;&#1511; 2</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/33.htm">
+				<a href="../movies/33.htm"><img src="../covers/000450.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/33.htm">&#1505;&#1488;&#1500;&#1495; &#1508;&#1492; &#1494;&#1492; &#1488;&#1512;&#1509; &#1497;&#1513;&#1512;&#1488;&#1500; &#1508;&#1512;&#1511; 3</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/34.htm">
+				<a href="../movies/34.htm"><img src="../covers/000451.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/34.htm">&#1505;&#1488;&#1500;&#1495; &#1508;&#1492; &#1494;&#1492; &#1488;&#1512;&#1509; &#1497;&#1513;&#1512;&#1488;&#1500; &#1508;&#1512;&#1511; 4</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/189.htm">
+				<a href="../movies/189.htm"><img src="../covers/000638.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/189.htm">&#1505;&#1488;&#1500;&#1495; &#1513;&#1489;&#1514;&#1497;
+			&nbsp;(1964)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/184.htm">
+				<a href="../movies/184.htm"><img src="../covers/000633.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/184.htm">&#1505;&#1493;&#1489;&#1504;&#1497;&#1512;&#1497;&#1501;
+			&nbsp;(2006)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/221.htm">
+				<a href="../movies/221.htm"><img src="../covers/000676.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/221.htm">&#1505;&#1493;&#1507; &#1492;&#1506;&#1493;&#1500;&#1501; &#1513;&#1502;&#1488;&#1500;&#1492;
+			&nbsp;(2004)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/196.htm">
+				<a href="../movies/196.htm"><img src="../covers/000648.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/196.htm">&#1505;&#1497;&#1497;&#1491; &#1511;&#1513;&#1493;&#1506;: &#1508;&#1495;&#1491;&#1503; &#1502;&#1497;&#1500;&#1491;&#1493;&#1514;
+			&nbsp;(2009)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/36.htm">
+				<a href="../movies/36.htm"><img src="../covers/000453.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/36.htm">&#1505;&#1511;&#1504;&#1491;&#1500; &#1489;&#1488;&#1497;&#1493;&#1493;&#1504;&#1505;&#1511;
+			&nbsp;(2017)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/325.htm">
+				<a href="../movies/325.htm"><img src="../covers/000801.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/325.htm">&#1506;&#1500;&#1496;&#1492;
+			&nbsp;(2012)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/51.htm">
+				<a href="../movies/51.htm"><img src="../covers/000468.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/51.htm">&#1506;&#1509; &#1500;&#1497;&#1502;&#1493;&#1503;
+			&nbsp;(2008)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/358.htm">
+				<a href="../movies/358.htm"><img src="../covers/000837.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/358.htm">&#1506;&#1512;&#1489;&#1497;&#1501; &#1512;&#1493;&#1511;&#1491;&#1497;&#1501;
+			&nbsp;(2014)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/197.htm">
+				<a href="../movies/197.htm"><img src="../covers/000649.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/197.htm">&#1508;&#1497;&#1510;&#1492; &#1502;&#1513;&#1508;&#1495;&#1514;&#1497;&#1514;
+			&nbsp;(2003)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/1.htm">
+				<a href="../movies/1.htm"><img src="../covers/001036.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/1.htm">&#1508;&#1504;&#1497;&#1501; &#1488;&#1502;&#1497;&#1514;&#1497;&#1493;&#1514; - &#1492;&#1512;&#1508;&#1493;&#1488;&#1492; &#1492;&#1510;&#1497;&#1489;&#1493;&#1512;&#1497;&#1514;
+			&nbsp;(2016)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/60.htm">
+				<a href="../movies/60.htm"><img src="../covers/001051.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/60.htm">&#1508;&#1506;&#1501; &#1492;&#1497;&#1497;&#1514;&#1497;
+			&nbsp;(2010)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/331.htm">
+				<a href="../movies/331.htm"><img src="../covers/000808.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/331.htm">&#1511;&#1500;&#1512;&#1492; &#1492;&#1511;&#1491;&#1493;&#1513;&#1492;
+			&nbsp;(1996)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/335.htm">
+				<a href="../movies/335.htm"><img src="../covers/000813.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/335.htm">&#1513;&#1489;&#1506;&#1492;
+			&nbsp;(2008)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/41.htm">
+				<a href="../movies/41.htm"><img src="../covers/000458.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/41.htm">&#1513;&#1493;&#1502;&#1512;&#1514; &#1504;&#1490;&#1497;&#1506;&#1492;
+			&nbsp;(2016)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/223.htm">
+				<a href="../movies/223.htm"><img src="../covers/000679.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/223.htm">&#1513;&#1495;&#1493;&#1512;
+			&nbsp;(1994)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/42.htm">
+				<a href="../movies/42.htm"><img src="../covers/000459.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/42.htm">&#1513;&#1497;&#1496;&#1514; &#1492;&#1513;&#1511;&#1513;&#1493;&#1511;&#1492;
+			&nbsp;(2008)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/217.htm">
+				<a href="../movies/217.htm"><img src="../covers/000671.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/217.htm">&#1514;&#1493;&#1502;&#1512; &#1493;&#1492;&#1513;&#1512;&#1493;&#1496;&#1497;&#1501;
+			&nbsp;(2001)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/342.htm">
+				<a href="../movies/342.htm"><img src="../covers/000820.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/342.htm">&#1514;&#1495;&#1497;&#1492; &#1493;&#1514;&#1492;&#1497;&#1492;
+			&nbsp;(2005)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/345.htm">
+				<a href="../movies/345.htm"><img src="../covers/000823.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/345.htm">&#1514;&#1508;&#1493;&#1495;&#1497;&#1501; &#1502;&#1503; &#1492;&#1502;&#1491;&#1489;&#1512;
+			&nbsp;(2014)
+			</a>
+				</div>
+			</li>
+			
+
+			<li class="thumbnail" href="../movies/40.htm">
+				<a href="../movies/40.htm"><img src="../covers/000457.jpg"></img></a>
+				<div class="thumbnail-text">
+					<a href="../movies/40.htm">&#1514;&#1512;&#1510;&#1492; &#1488;&#1514;&#1512;: &#1510;&#1497;&#1508;&#1493;&#1512; &#1489;&#1495;&#1491;&#1512;
+			&nbsp;(2015)
+			</a>
+				</div>
+			</li>
+			
+</div>
+			</div>
+		</div>
+		<footer>
+			<div class="inner">
+				<a class="to_top" href="#header">^</a>
+				<div style="float: left">Dark Comfort by <a href="mailto:regiprogi@gmail.com">R3gi</a></div>
+				<div>Created with EMDB V3.18 (C) 2005-2018 No Rights Reserved ;)</div>
+			</div>
+		</footer>
+	</body>
+</html>
